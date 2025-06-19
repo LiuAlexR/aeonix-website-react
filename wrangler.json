@@ -9,7 +9,14 @@
   },
   "upload_source_maps": true,
   "assets": {
-    "directory": "./dist/client",
+    "directory": "./src/react-app/assets",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "14d4fcc2-b959-42d5-9731-e22e1e5f3b36",
+      "database_name": "data"
+    }
+  ]
 }
