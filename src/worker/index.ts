@@ -18,7 +18,7 @@ app.get("/api/products/names", async (c) => {
     return c.json({ err: e.message }, 500);
   }
 });
-
+app.get("/api/", (c) => c.json({ name: "Cloudflare" }));
 // Export our Hono app: Hono automatically exports a
 // Workers 'fetch' handler for you
 export default app;
