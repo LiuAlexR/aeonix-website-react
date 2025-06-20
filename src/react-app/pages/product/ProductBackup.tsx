@@ -3,7 +3,6 @@ import Navbar from "../../components/navbar/Navbar";
 import "./Product.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-
 interface theProduct {
   page_layout: string;
   product_description_1: string;
@@ -11,8 +10,8 @@ interface theProduct {
   product_id: string;
   product_image_link: string;
   product_name: string;
-}
 
+}
 function Product() {
   let params = useParams();
   let id = params.product_id;
@@ -51,80 +50,42 @@ function Product() {
     };
 
     fetchProductData();
-  }, [id]);
+  }, []);
 
-  // This computed value is good for centralizing the state interpretation
-  const productToDisplay = (() => {
+  const productsToDisplay = (() => {
     if (loadingProducts) {
-      // Return a "loading" product object
-      return {
+      // Provide default/empty values for all fields to satisfy theProduct interface
+      return [{
         page_layout: "",
         product_description_1: "Loading product details...",
         product_description_2: "",
         product_id: "loading",
-        product_image_link: "", // Still an empty string here, handled below
+        product_image_link: "",
         product_name: "Loading..."
-      };
+      }];
     }
     if (productsError) {
-      // Return an "error" product object
-      return {
+      // Provide default/empty values for all fields to satisfy theProduct interface
+      return [{
         page_layout: "",
         product_description_1: `Error: ${productsError}`,
         product_description_2: "",
         product_id: "error",
-        product_image_link: "", // Still an empty string here, handled below
+        product_image_link: "",
         product_name: "Error loading product"
-      };
+      }];
     }
-    // If loaded and no error, return the first product from the fetched array
-    // Assuming you always expect a single product for a given ID
-    return theProducts.length > 0 ? theProducts[0] : null; // Return null if no product found
+    return theProducts;
   })();
-
-
-  // Handle loading, error, and no-product-found states
-  if (loadingProducts) {
-    return (
-      <>
-        <Navbar />
-        <div className="product-loading">Loading product details...</div>
-        <Footer />
-      </>
-    );
-  }
-
-  if (productsError) {
-    return (
-      <>
-        <Navbar />
-        <div className="product-error">Error loading product: {productsError}</div>
-        <Footer />
-      </>
-    );
-  }
-  /*No Product*/
-  if (!productToDisplay) {
-    return (
-      <>
-        <Navbar />
-        <div className="product-not-found">Product not found.</div>
-        <Footer />
-      </>
-    );
-  }
-
+  let productObj = productsToDisplay[0];
   return (
     <>
-      <title>{productToDisplay.product_name + ' | Aeonix Energy'}</title>
+      <title>{productObj.product_name + ' | Aeonix Energy'}</title>
       <Navbar />
-      {productToDisplay.product_image_link && (
-        <img src={productToDisplay.product_image_link} id="about_center_image" alt={productToDisplay.product_name || "Product Image"}></img>
-      )}
+      <img src={productObj.product_image_link} id="about_center_image"></img>
       <div id="about_center_image_spacer"></div>
       <Footer />
     </>
   );
 }
-
 export default Product;
