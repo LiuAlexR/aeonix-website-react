@@ -33,12 +33,9 @@ function GetMobileMenu() {
         </>
     );
 }
-interface Product {
-    product_name: string;
-    product_id: string;
-}
+
 function NavBarWrapper() {
-    const [theProducts, setProduct] = useState<Product[]>([]);
+    const [productNames, setProductNames] = useState<string[]>([]);
     const [loadingProducts, setLoadingProducts] = useState(true);
     const [productsError, setProductsError] = useState<string | null>(null);
 
@@ -52,13 +49,10 @@ function NavBarWrapper() {
                 const result = await response.json();
 
                 if (Array.isArray(result)) {
-                    const parsed: Product[] = result.map((item: any) => ({
-                        product_id: item.product_id,
-                        product_name: item.product_name
-                    }));
-                    setProduct(parsed);
+                    let parsed = result.map((nameObj: { product_name: string }) => nameObj.product_name);
+                    setProductNames(parsed);
                 } else {
-                    setProductsError("Invalid data format received: Expected an array of product objects.");
+                    setProductsError("Invalid data format received: Expected an array.");
                 }
             } catch (err: any) {
                 console.error("Error fetching product data:", err);
@@ -73,12 +67,12 @@ function NavBarWrapper() {
 
     const productsToDisplay = (() => {
         if (loadingProducts) {
-            return [{ product_id: "loading", product_name: "Loading..." }];
+            return ["Loading..."];
         }
         if (productsError) {
-            return [{ product_id: "error", product_name: `Error: ${productsError}` }];
+            return [`Error: ${productsError}`];
         }
-        return theProducts;
+        return productNames;
     })();
 
     return (
@@ -102,7 +96,7 @@ function NavBarItemNoDropdown({ title, link }: { title: string; link: string }) 
     );
 }
 
-function NavBarItemWithDropdown({ title, link, options }: { title: string; link: string; options: Product[] }) {
+function NavBarItemWithDropdown({ title, link, options }: { title: string; link: string; options: string[] }) {
     return (
         <li className="nav_bar_item">
             <div className="drop_down">
@@ -112,8 +106,8 @@ function NavBarItemWithDropdown({ title, link, options }: { title: string; link:
                 </a>
                 <div className="drop_down_wrapper">
                     {options.map((name, index) => (
-                        <Link key={index} className="drop_down_content" to={'/' + title.toLowerCase() + '/' + name.product_id}>
-                            {name.product_name}
+                        <Link key={index} className="drop_down_content" to={title.toLowerCase() + '/' + name}>
+                            {name}
                         </Link>
                     ))}
                 </div>

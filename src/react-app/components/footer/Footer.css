@@ -3,6 +3,7 @@
     color: rgb(var(--primary-light)); /* Light text on dark background */
     padding: 3rem 0; /* Vertical padding */
     font-family: Arial, sans-serif; /* Or your preferred font */
+    z-index: 10;
 }
 
 .footer-container {

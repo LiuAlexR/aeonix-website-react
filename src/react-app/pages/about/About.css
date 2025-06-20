@@ -1,0 +1,15 @@
+#about_center_image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 105vw;
+    height: 75vh;
+    z-index: -1;
+}
+#about_center_image_spacer {
+    left: 0;
+    top: 0;
+    min-width: 105vw;
+    height: calc(75vh - 7rem);
+    position: relative;
+}
