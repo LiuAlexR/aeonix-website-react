@@ -23,14 +23,14 @@ function GetLogo() {
 
 function GetMobileMenu() {
     return (
-        <div id="mobile_menu">
+        <>
             <input type="checkbox" id="menu_toggle" className="menu_toggle" />
             <label htmlFor="menu_toggle" className="hamburger">
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
             </label>
-        </div>
+        </>
     );
 }
 
@@ -79,6 +79,9 @@ function NavBarWrapper() {
         <ul id="bar_as_list">
             <NavBarItemNoDropdown title="Home" link="/" />
             <NavBarItemWithDropdown title="Products" link="/Products" options={productsToDisplay} />
+            <NavBarItemNoDropdown title="About Us" link="/about" />
+            <NavBarItemNoDropdown title="News" link="/news" />
+            <NavBarItemNoDropdown title="Contact Us" link="/contact" />
         </ul>
     );
 }
