@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     padding: 0 0 2rem 0;
-    background: linear-gradient(rgba(var(--logo-color), 1) 0%, rgba(var(--logo-color), 0.9) 80%, rgba(var(--logo-color), 0) 100%);
+    background: linear-gradient(rgba(var(--primary-light), 1) 0%, rgba(var(--primary-light), 0.9) 80%, rgba(var(--primary-light), 0) 100%);
     position: sticky;
     top: 0;
     min-height: 5rem;
@@ -55,7 +55,7 @@
 }
 
 .nav_bar_item_link:hover {
-    background: rgba(var(--dark-accent), 1);
+    background: rgba(var(--primary-dark), 1);
     color: rgb(var(--primary-light));
     border-radius: 4px;
 }
@@ -113,7 +113,7 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: rgb(var(--primary-light));
+    background-color: rgb(var(--primary-dark));
     transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 50rem) {

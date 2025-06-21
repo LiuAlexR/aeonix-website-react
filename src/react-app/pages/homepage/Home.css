@@ -14,6 +14,17 @@
     font-size: 3rem;
     text-align: right;
     z-index: -1;
+    animation: 2s fadeInUp;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 #centerpiece #centered_logo {
     position: absolute;
