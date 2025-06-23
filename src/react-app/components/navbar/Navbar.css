@@ -59,7 +59,7 @@
 }
 
 .nav_bar_item_link:hover {
-    background: rgba(var(--dark-accent), 1);
+    background: rgba(var(--dark-gray), 1);
     color: rgb(var(--primary-light));
     border-radius: 4px;
 }

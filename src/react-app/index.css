@@ -10,7 +10,9 @@
   --light-accent: 255, 170, 70;   /* A lighter, more playful version for subtle accents or highlights */
 
   --neutral-gray: 150, 150, 150; /* A mid-tone grey for borders, dividers, or subtle text */
-  --light-gray: 200, 200, 200;
+  --light-gray: 225, 225, 225;
+  --dark-gray: 100, 100, 100;
+  --very-light-gray: 240, 240, 235;
 }
 body {
   font-family: 'Futura', sans-serif;

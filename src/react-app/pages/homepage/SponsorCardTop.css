@@ -1,0 +1,22 @@
+#sponsor-card-wrapper {
+    background-color: rgb(var(--primary-dark));
+    color: rgb(var(--primary-light));
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom: 2rem;
+}
+#sponsor-card-wrapper #sponsor-card-text {
+    color: rgba(var(--primary-light), 1);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: 4px -4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.logo-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.sponsor-logo {
+    height: 7rem;
+    width: 7rem;
+}
