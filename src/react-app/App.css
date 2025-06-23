@@ -1,20 +1,4 @@
-:root {
-  /* Primary brand color */
-  --logo-color: 192, 79, 21; 
 
-  /* Primary Text/Background Colors */
-  --primary-dark: 26, 26, 26;   /* Very dark grey/near black for primary text or backgrounds */
-  --primary-light: 245, 245, 245; /* Off-white for main backgrounds, softer than pure white */
-  --white-to-hover: 210, 210, 210; /* A light grey for hover states on light backgrounds */
-
-  /* Accent Colors (derived from or complementary to logo-color) */
-  --primary-accent: 224, 112, 33; /* A brighter, more saturated version of your logo color for main accents */
-  --dark-accent: 140, 58, 12;     /* A deeper, richer tone of your logo color for dark accents/hovers */
-  --light-accent: 255, 170, 70;   /* A lighter, more playful version for subtle accents or highlights */
-
-  /* You might also consider a subtle neutral for borders or secondary text */
-  --neutral-grey: 150, 150, 150; /* A mid-tone grey for borders, dividers, or subtle text */
-}
 html, body {
   max-width: 100%;
   overflow-x: clip;

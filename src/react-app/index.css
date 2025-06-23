@@ -9,7 +9,8 @@
   --dark-accent: 140, 58, 12;     /* A deeper, richer tone of your logo color for dark accents/hovers */
   --light-accent: 255, 170, 70;   /* A lighter, more playful version for subtle accents or highlights */
 
-  --neutral-grey: 150, 150, 150; /* A mid-tone grey for borders, dividers, or subtle text */
+  --neutral-gray: 150, 150, 150; /* A mid-tone grey for borders, dividers, or subtle text */
+  --light-gray: 200, 200, 200;
 }
 body {
   font-family: 'Futura', sans-serif;
