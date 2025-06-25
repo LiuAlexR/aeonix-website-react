@@ -6,7 +6,7 @@ import SponsorCardTop from "./SponsorCardTop";
 import SpinningImage from "./SpinningImage";
 import Middlepiece from "./Middlepiece";
 import ImageWithText from "./ImageWithText";
-import Carousel from "./Carousel";
+import CarouselComponent from "./CarouselComponent";
 function Home() {
   return (
     <>
@@ -18,7 +18,7 @@ function Home() {
       <Middlepiece />
       <SponsorCardTop />
       <ImageWithText />
-      <Carousel />
+      <CarouselComponent />
       <Footer />
     </>
   );

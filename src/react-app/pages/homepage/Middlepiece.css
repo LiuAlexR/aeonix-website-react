@@ -1,9 +1,9 @@
-#card-wrapper {
+#card-wrapper-middle {
     background-color: rgb(var(--primary-light));
     padding: 2rem 0rem;
 }
 
-.card {
+.card-middle {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: rgb(var(--very-light-gray));
     border: 2px;
@@ -18,7 +18,7 @@
     /* 5px rounded corners */
 }
 
-.card:hover {
+.card-middle:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     background-color: rgb(var(---light-gray));
 }

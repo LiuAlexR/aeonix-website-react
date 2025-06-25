@@ -1,0 +1,25 @@
+.card-wrapper-about {
+
+    background-color: rgb(var(--primary-light));
+    padding-top:  7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.card-about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(var(--very-light-gray));
+    border: 2px;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+    text-align: center;
+    
+    /* 5px rounded corners */
+}
+
+.card-about:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(var(---light-gray));
+}

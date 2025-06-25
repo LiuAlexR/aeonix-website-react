@@ -2,6 +2,8 @@
     width: 100vw;
     height: 70vh;
     position: relative;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2) !important;
+    z-index: 2;
 }
 
 #image {

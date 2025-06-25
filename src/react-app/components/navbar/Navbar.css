@@ -80,6 +80,7 @@
     overflow: hidden;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    transition: 0.3s ease;
 }
 
 .drop_down_content {
@@ -89,6 +90,7 @@
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease;
     white-space: nowrap;
+    transition: 0.3s ease;
 }
 
 .drop_down_content:hover {
