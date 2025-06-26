@@ -6,7 +6,7 @@
     background: linear-gradient(rgba(var(--navbar-color), 1) 0%, rgba(var(--navbar-color), 0.9) 80%, rgba(var(--navbar-color), 0) 100%);
     position: sticky;
     top: 0;
-    height: 5rem;
+    height: 7rem;
     align-items: center;
     justify-content: space-between;
     /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
@@ -14,7 +14,7 @@
     transition: 0.5s ease;
 }
 .hide {
-  top: -5rem !important;
+  top: -7rem !important;
 }
 #logo {
     flex-grow: 0;
@@ -22,13 +22,12 @@
     justify-content: left;
     align-items: center;
     margin-left: 2rem;
+    padding-top: 0.5rem;
 }
 
 #logo_img {
-    height: 300%;
-    width: 300%;
-    max-width: 10rem;
-    max-height: 10rem;
+    height: 15rem;
+    width: 15rem;
     object-fit: contain;
 }
 
@@ -51,7 +50,7 @@
     border: none;
     padding: 1rem 1.5rem;
     text-align: center;
-    font-size: 22px;
+    font-size: 26px;
     margin: 0 5px;
     transition: 0.3s ease, color 0.3s ease;
     display: block;
@@ -91,6 +90,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     white-space: nowrap;
     transition: 0.3s ease;
+    font-size: 20px;
 }
 
 .drop_down_content:hover {
@@ -128,16 +128,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
         min-height: auto;
-        padding: 0.8rem 0;
+        padding-top: 0rem;
     }
 
     #logo {
         margin-left: 1rem;
+        padding-top: 0;
     }
 
     #logo_img {
-        max-width: 4rem;
-        max-height: 3.5rem;
+        max-width: 8rem;
+        max-height: 8rem;
     }
 
     .hamburger {

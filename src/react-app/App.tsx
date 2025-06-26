@@ -7,7 +7,7 @@ import About from "./pages/about/About";
 import Products from "./pages/products/Products";
 import Product from "./pages/product/Product";
 import Contact from "./pages/contact/Contact";
-import News from "./pages/news/News";
+import NewsPage from "./pages/news/News";
 import Error404 from "./pages/error/Error404";
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/Products" element={<Products />} />
         <Route path="/products/:product_id" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<NewsPage />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

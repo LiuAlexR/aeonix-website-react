@@ -4,7 +4,6 @@ import { Hono } from "hono";
 type Bindings = {
   DB: D1Database;
 };
-
 const app = new Hono<{ Bindings: Bindings }>();
 
 // Accessing D1 is via the c.env.YOUR_BINDING property
@@ -38,6 +37,42 @@ app.get("/api/product/:product_id", async (c) => {
     if(e instanceof Error)
     return c.json({ err: e.message }, 500);
   }
+});
+app.get("api/news", async (c) => {
+  try {
+    const stmt = c.env.DB.prepare("SELECT * FROM News");
+    const { results } = await stmt.all<{ name: string }>();
+    return c.json(results);
+  } catch (e) {
+    if(e instanceof Error)
+    return c.json({ err: e.message }, 500);
+  }
+})
+app.post("/api/contact", async (c) => {
+    try {
+        const { name, email, message } = await c.req.json();
+
+        if (!name || !email || !message) {
+            return c.json({ error: "Missing required fields: name, email, or message" }, 400);
+        }
+
+        const stmt = c.env.DB.prepare( 
+            "INSERT INTO comments (name, email, message) VALUES (?, ?, ?)"
+        );
+
+        const result = await stmt.bind(name, email, message).run();
+
+        return c.json({
+            message: "Form data submitted successfully!",
+            result: result
+        }, 201); // 201 Created
+    } catch (e: any) {
+        console.error("Error processing contact form:", e);
+        return c.json({
+            error: "Failed to process form submission",
+            details: e.message
+        }, 500);
+    }
 });
 app.get("/api/", (c) => c.json({ name: "Cloudflare" }));
 // Export our Hono app: Hono automatically exports a
