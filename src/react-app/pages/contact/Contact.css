@@ -1,6 +1,8 @@
 #form-contact-wrapper {
     display: flex;
     flex-direction: column;
+    text-align: right;
+    background-color: rgb(var(--light-gray));
 }
 .form-contact-submit {
     width: 20vw;
@@ -13,4 +15,25 @@
     padding: 5px 2px;
       margin: 8px 0;
   border-radius: 4px;
+}
+.text-form-contact-wrapper {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    background-color: rgb(var(--light-gray));
+}
+#contact-center-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 105vw;
+    height: 100vh;
+    z-index: -1;
+}
+#contact-center-image-spacer {
+    left: 0;
+    top: 0;
+    min-width: 105vw;
+    height: calc(100vh - 7rem);
+    position: relative;
 }

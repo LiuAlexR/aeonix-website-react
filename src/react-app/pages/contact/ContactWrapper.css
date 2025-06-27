@@ -1,0 +1,11 @@
+.text-form-contact-wrapper {
+    position: absolute;
+    width: 60vw;
+    top: 20vh;
+    left: 15vw;
+    padding: 2rem 5rem;
+    background-color: rgb(var(--primary-light));
+    max-height: 60vh;
+    overflow: clip;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
