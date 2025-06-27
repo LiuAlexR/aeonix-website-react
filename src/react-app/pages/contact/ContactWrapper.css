@@ -3,9 +3,122 @@
     width: 60vw;
     top: 20vh;
     left: 15vw;
-    padding: 2rem 5rem;
+    padding: 3rem 6rem;
     background-color: rgb(var(--primary-light));
-    max-height: 60vh;
-    overflow: clip;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 10px;
+    gap: 3rem;
+}
+
+.contact-text {
+    flex-grow: 1;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(var(--primary-dark));
+    text-align: left;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#form-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 2;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-contact-label {
+    padding: 1rem 0;
+    color: rgb(var(--secondary-dark));
+    font-weight: 500;
+}
+
+.form-contact-text {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(var(--secondary-light), 0.5);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-contact-text:focus {
+    outline: none;
+    border-color: rgb(var(--accent-color));
+    box-shadow: 0 0 0 3px rgba(var(--accent-color), 0.2);
+}
+
+.form-contact-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-contact-submit {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgb(var(--logo-color));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1.5rem;
+}
+
+.form-contact-submit:hover:not(:disabled) {
+    background-color: rgb(var(--logo-color-dark));
+    transform: translateY(-2px);
+}
+
+.form-contact-submit:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.form-contact-message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    width: 60vw;
+    position: absolute;
+    top: calc(20vh + 60vh + 20px);
+    left: 15vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-contact-message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    width: calc(60vw + 10rem);
+    position: absolute;
+    top: calc(20vh + 60vh + 20px);
+    left: 15vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }

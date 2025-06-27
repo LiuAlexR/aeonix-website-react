@@ -1,6 +1,6 @@
 :root {
-  --logo-color: 161, 66, 18;/*192, 79, 21; */
-
+  --logo-color: 192, 79, 21; 
+--logo-color-dark: 161, 66, 18;
   --primary-dark: 26, 26, 26;   /* Very dark grey/near black for primary text or backgrounds */
   --primary-light: 245, 245, 245; /* Off-white for main backgrounds, softer than pure white */
   --white-to-hover: 210, 210, 210; /* A light grey for hover states on light backgrounds */
