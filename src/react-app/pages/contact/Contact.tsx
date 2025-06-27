@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
-
+import "./Contact.css";
 interface Inputs {
     name: string;
     email: string;
@@ -67,35 +67,39 @@ export default function Contact() {
         <>
             <Navbar />
             <br /><br /><br /><br /><br />
-            <form onSubmit={handleSubmit}>
-                <label>Enter your name:
+            <div >
+            <form onSubmit={handleSubmit} id="form-contact-wrapper">
+                <label className="form-contact-label">Enter your name:<br />
                     <input
                         type="text"
                         name="name"
                         value={inputs.name}
                         onChange={handleChange}
+                        className="form-contact-text"
                     />
                 </label>
-                <label>Enter your email:
+                <label className="form-contact-label">Enter your email: <br />
                     <input
                         type="string"
                         name="email"
                         value={inputs.email}
                         onChange={handleChange}
+                        className="form-contact-text"
                     />
                 </label>
-                <label>Enter your message:
-                    <input
-                        type="textarea"
+                <label className="form-contact-label">Enter your message: <br />
+                    <textarea
                         name="message"
                         value={inputs.message}
                         onChange={handleChange}
+                        className="form-contact-textarea form-contact-text"
                     />
                 </label>
-                <input type="submit" disabled={loading}/>
+                <input type="submit" disabled={loading} className="form-contact-submit"/>
             </form>
+            </div>
             {message && (
-                        <div className={`p-3 rounded-md text-center ${isError ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}`}>
+                        <div className={isError ? 'form-contact-message-error' : 'form-contact-message-success'}>
                             {message}
                         </div>
                     )}

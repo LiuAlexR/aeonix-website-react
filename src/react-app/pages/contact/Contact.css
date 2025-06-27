@@ -1,0 +1,16 @@
+#form-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.form-contact-submit {
+    width: 20vw;
+}
+.form-contact-label {
+    padding: 1rem 2rem 3rem;
+}
+.form-contact-text {
+    margin-top: 1rem;
+    padding: 5px 2px;
+      margin: 8px 0;
+  border-radius: 4px;
+}

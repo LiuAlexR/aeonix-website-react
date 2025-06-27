@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../../assets/logos/aeonix_energy_dark.png";
+import logo from "../../assets/logos/aeonix_energy_light.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
