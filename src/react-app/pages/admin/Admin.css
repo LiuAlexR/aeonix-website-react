@@ -1,0 +1,18 @@
+#admin-center-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 105vw;
+    height: 100vh;
+    z-index: -1;
+}
+#admin-center-image-spacer {
+    left: 0;
+    top: 0;
+    min-width: 105vw;
+    height: calc(100vh - 70rem);
+    position: relative;
+}
+.spacer-admin {
+    height: 10vh;
+}

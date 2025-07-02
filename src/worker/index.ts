@@ -74,6 +74,65 @@ app.post("/api/contact", async (c) => {
         }, 500);
     }
 });
+app.post("api/add/news", async (c) => {
+  try {
+    var {imageLink, redirectLink, blurb, password} = await c.req.json();
+    if(password != "1234"){
+      return c.json({ error: "Wrong Password"}, 400);
+    }
+    if(!imageLink || !redirectLink || !blurb){
+      return c.json({ error: "Missing item"}, 400);
+    }
+    if(imageLink.substring(0, 5) != "https"){
+      imageLink = "https://" + imageLink;
+    }
+    if(redirectLink.substring(0, 5) != "https"){
+      redirectLink = "https://" + imageLink;
+    }
+    const stmt = c.env.DB.prepare( 
+            "INSERT INTO News (date, imgurl, blurb, link) VALUES (?, ?, ?, ?)"
+        );
+    const date = new Date();
+    const curDate = date.getFullYear().toString() + "-" + (date.getMonth() + 1).toString() + "-" + date.getDate().toString();
+    const result = await stmt.bind(curDate, imageLink, blurb, redirectLink).run();
+    return c.json({
+            message: "Form data submitted successfully!",
+            result: result
+        }, 201);
+  } catch (e: any) {
+    return c.json({
+      error: "Failed to add item",
+      details: e.message
+    }, 500);
+  }
+});
+app.post("api/remove/news", async (c) => {
+  try {
+    var {blurbText, password} = await c.req.json();
+    if(password != "1234"){
+      return c.json({ error: "Wrong Password"}, 400);
+    }
+    if(!blurbText){
+      return c.json({ error: "Missing item"}, 400);
+    }
+
+    const stmt = c.env.DB.prepare(
+            "DELETE FROM News WHERE blurb LIKE ?"
+        );
+
+        // Bind the blurbText with wildcards and execute the statement
+        const result = await stmt.bind(`%${blurbText}%`).run();
+    return c.json({
+            message: "Form data submitted successfully!",
+            result: result
+        }, 201);
+  } catch (e: any) {
+    return c.json({
+      error: "Failed to remove item",
+      details: e.message
+    }, 500);
+  }
+});
 app.get("/api/", (c) => c.json({ name: "Cloudflare" }));
 // Export our Hono app: Hono automatically exports a
 // Workers 'fetch' handler for you

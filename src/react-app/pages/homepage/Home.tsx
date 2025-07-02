@@ -13,9 +13,9 @@ function Home() {
       <title>Home | Aeonix Energy</title>
       <Navbar />
       <Centerpiece />
-      
-      <SpinningImage />
       <Middlepiece />
+      <SpinningImage />
+      
       <SponsorCardTop />
       <ImageWithText />
       <CarouselComponent />

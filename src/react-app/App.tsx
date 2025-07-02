@@ -9,6 +9,7 @@ import Product from "./pages/product/Product";
 import Contact from "./pages/contact/Contact";
 import NewsPage from "./pages/news/News";
 import Error404 from "./pages/error/Error404";
+import Admin from "./pages/admin/Admin";
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/products/:product_id" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<NewsPage />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
