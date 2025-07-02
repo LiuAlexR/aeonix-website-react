@@ -16,7 +16,7 @@ export default function Admin() {
             <div id="admin-center-image-spacer"></div>
            <AddNewsWrapper />
            <div className="spacer-admin"></div>
-           {/* <RemoveNewsWrapper /> */}
+           <RemoveNewsWrapper />
            <div className="spacer-admin"></div>
            <div className="spacer-admin"></div>
             <Footer />  

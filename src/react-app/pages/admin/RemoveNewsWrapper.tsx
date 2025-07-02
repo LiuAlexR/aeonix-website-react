@@ -76,7 +76,7 @@ export default function RemoveNewsWrapper() {
                     </label>
                     <label className="form-admin-news-label">Enter the password: <br />
                         <input
-                            type="password"
+                            type="string"
                             name="password"
                             value={inputs.password}
                             onChange={handleChange}
