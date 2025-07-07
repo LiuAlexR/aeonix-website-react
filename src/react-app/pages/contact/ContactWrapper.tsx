@@ -62,8 +62,11 @@ export default function ContactWrapper() {
     return(
         <>
          <div className="text-form-contact-wrapper">
+            <div id="contact-left-wrapper">
                 <div className="contact-text">
                     We want to hear from you!
+                </div>
+                <iframe width="500" height="400" id="contact-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-111.97288%2C40.72664%2C-111.95825%2C40.73487&amp;layer=mapnik&amp;marker=40.72926%2C-111.96626" ></iframe><br/><small></small>
                 </div>
                 <form onSubmit={handleSubmit} id="form-contact-wrapper">
                     <label className="form-contact-label">Enter your name:<br />

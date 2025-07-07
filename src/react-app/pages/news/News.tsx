@@ -9,12 +9,12 @@ interface NewsItem {
     news_blurb: string;
 }
 export default function NewsPage() {
-    const [theProducts, setProduct] = useState<NewsItem[]>([]);
-    const [loadingNews, setLoadingProducts] = useState(true);
-    const [newsError, setProductsError] = useState<string | null>(null);
+    const [theNews, setNews] = useState<NewsItem[]>([]);
+    const [loadingNews, setLoadingNews] = useState(true);
+    const [newsError, setNewsError] = useState<string | null>(null);
 
     useEffect(() => {
-        const fetchProductData = async () => {
+        const fetchNewsData = async () => {
             try {
                 const response = await fetch('/api/news');
                 if (!response.ok) {
@@ -29,19 +29,19 @@ export default function NewsPage() {
                         news_blurb: item.blurb,
                         news_link: item.link
                     }));
-                    setProduct(parsed);
+                    setNews(parsed);
                 } else {
-                    setProductsError("Invalid data format received: Expected an array of product objects.");
+                    setNewsError("Invalid data format received: Expected an array of news objects.");
                 }
             } catch (err: any) {
-                console.error("Error fetching product data:", err);
-                setProductsError(err.message);
+                console.error("Error fetching news data:", err);
+                setNewsError(err.message);
             } finally {
-                setLoadingProducts(false);
+                setLoadingNews(false);
             }
         };
 
-        fetchProductData();
+        fetchNewsData();
     }, []);
 
     const NewsCollection = (() => {
@@ -51,7 +51,7 @@ export default function NewsPage() {
         if (newsError) {
             return [{ news_date: "Error", news_img_url: "Error", news_blurb: "Error", news_link: "Error" }];
         }
-        return theProducts;
+        return theNews;
     })();
 
     return (

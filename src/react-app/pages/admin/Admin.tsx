@@ -4,6 +4,8 @@ import DroneImg from "../../assets/media/contact/Drone.jpg";
 import "./Admin.css";
 import AddNewsWrapper from "./AddNewsWrapper";
 import RemoveNewsWrapper from "./RemoveNewsWrapper";
+import AddProductsWrapper from "./AddProductsWrapper";
+import RemoveProductsWrapper from "./RemoveProductsWrapper";
 
 
 export default function Admin() {
@@ -17,6 +19,11 @@ export default function Admin() {
            <AddNewsWrapper />
            <div className="spacer-admin"></div>
            <RemoveNewsWrapper />
+           <div className="spacer-admin"></div>
+           <AddProductsWrapper />
+           <div className="spacer-admin"></div>
+           <RemoveProductsWrapper />
+           <div className="spacer-admin"></div>
            <div className="spacer-admin"></div>
            <div className="spacer-admin"></div>
             <Footer />  

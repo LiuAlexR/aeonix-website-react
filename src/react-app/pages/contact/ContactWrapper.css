@@ -18,7 +18,13 @@
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
+.contact-left-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#contact-map{
+    margin-top: 3rem;
+}
 .contact-text {
     flex-grow: 1;
     font-size: 2.2rem;

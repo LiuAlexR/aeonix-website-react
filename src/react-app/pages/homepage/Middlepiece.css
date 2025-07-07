@@ -12,6 +12,8 @@
     border-radius: 5px;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -23,8 +25,24 @@
     transition: 0.3s;
     background-color: rgb(var(---light-gray));
 }*/
+#homepage-pic-1 {
+    width: 20rem;
+    height: 15rem;
+    position: relative;
+    right: 30rem;
+    border-radius: 25px;
+    outline-offset: 5px;
+    outline-color: black;
+    outline-width: 2px;
+    outline-style: solid;
+}
 #card1 {
     margin-left: 10vw;
+}
+#card1-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #card2 {
     position: relative;

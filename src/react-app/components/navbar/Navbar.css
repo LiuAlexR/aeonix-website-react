@@ -10,11 +10,12 @@
     align-items: center;
     justify-content: space-between;
     /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
-    z-index: 10;
+    z-index: 100;
     transition: 0.5s ease;
 }
 .hide {
   top: -7rem !important;
+  z-index: 100;
 }
 #logo {
     flex-grow: 0;
@@ -23,6 +24,7 @@
     align-items: center;
     margin-left: 2rem;
     padding-top: 0.5rem;
+    z-index: 100;
 }
 
 #logo_img {

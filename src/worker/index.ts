@@ -48,6 +48,16 @@ app.get("api/news", async (c) => {
     return c.json({ err: e.message }, 500);
   }
 })
+app.get("api/products", async (c) => {
+  try {
+    const stmt = c.env.DB.prepare("SELECT * FROM Products");
+    const { results } = await stmt.all<{ name: string }>();
+    return c.json(results);
+  } catch (e) {
+    if(e instanceof Error)
+    return c.json({ err: e.message }, 500);
+  }
+})
 app.post("/api/contact", async (c) => {
     try {
         const { name, email, message } = await c.req.json();
@@ -106,6 +116,33 @@ app.post("api/add/news", async (c) => {
     }, 500);
   }
 });
+app.post("api/add/product", async (c) => {
+  try {
+    var {imageLink, productName, description1, description2, password} = await c.req.json();
+    if(password != "1234"){
+      return c.json({ error: "Wrong Password"}, 400);
+    }
+    if(!imageLink || !productName || !description1 || !description2){
+      return c.json({ error: "Missing item"}, 400);
+    }
+    if(imageLink.substring(0, 5) != "https"){
+      imageLink = "https://" + imageLink;
+    }
+    const stmt = c.env.DB.prepare( 
+            "INSERT INTO Products (product_name, page_layout, product_description_1, product_description_2, product_image_link) VALUES (?, ?, ?, ?, ?)"
+        );
+    const result = await stmt.bind(productName, "1", description1, description2, imageLink).run();
+    return c.json({
+            message: "Form data submitted successfully!",
+            result: result
+        }, 201);
+  } catch (e: any) {
+    return c.json({
+      error: "Failed to add item",
+      details: e.message
+    }, 500);
+  }
+});
 app.post("api/remove/news", async (c) => {
   try {
     var {blurbText, password} = await c.req.json();
@@ -118,6 +155,33 @@ app.post("api/remove/news", async (c) => {
 
     const stmt = c.env.DB.prepare(
             "DELETE FROM News WHERE blurb LIKE ?"
+        );
+
+        // Bind the blurbText with wildcards and execute the statement
+        const result = await stmt.bind(`%${blurbText}%`).run();
+    return c.json({
+            message: "Form data submitted successfully!",
+            result: result
+        }, 201);
+  } catch (e: any) {
+    return c.json({
+      error: "Failed to remove item",
+      details: e.message
+    }, 500);
+  }
+});
+app.post("api/remove/product", async (c) => {
+  try {
+    var {blurbText, password} = await c.req.json();
+    if(password != "1234"){
+      return c.json({ error: "Wrong Password"}, 400);
+    }
+    if(!blurbText){
+      return c.json({ error: "Missing item"}, 400);
+    }
+
+    const stmt = c.env.DB.prepare(
+            "DELETE FROM Products WHERE product_name LIKE ?"
         );
 
         // Bind the blurbText with wildcards and execute the statement
