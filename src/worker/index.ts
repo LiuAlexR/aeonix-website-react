@@ -118,20 +118,20 @@ app.post("api/add/news", async (c) => {
 });
 app.post("api/add/product", async (c) => {
   try {
-    var {imageLink, productName, description1, description2, password} = await c.req.json();
+    var {imageLink, productName, description1, description2, password, productID} = await c.req.json();
     if(password != "1234"){
       return c.json({ error: "Wrong Password"}, 400);
     }
-    if(!imageLink || !productName || !description1 || !description2){
+    if(!imageLink || !productName || !description1 || !description2 || !productID){
       return c.json({ error: "Missing item"}, 400);
     }
     if(imageLink.substring(0, 5) != "https"){
       imageLink = "https://" + imageLink;
     }
     const stmt = c.env.DB.prepare( 
-            "INSERT INTO Products (product_name, page_layout, product_description_1, product_description_2, product_image_link) VALUES (?, ?, ?, ?, ?)"
+            "INSERT INTO Products (product_name, page_layout, product_description_1, product_description_2, product_image_link, product_id) VALUES (?, ?, ?, ?, ?, ?)"
         );
-    const result = await stmt.bind(productName, "1", description1, description2, imageLink).run();
+    const result = await stmt.bind(productName, "1", description1, description2, imageLink, productID).run();
     return c.json({
             message: "Form data submitted successfully!",
             result: result

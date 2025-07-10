@@ -8,6 +8,7 @@ interface ProductsItem {
     product_description_1: string;
     product_description_2: string;
     page_layout: string;
+    product_id: string;
 }
 export default function Products() {
     const [theProducts, setProducts] = useState<ProductsItem[]>([]);
@@ -29,7 +30,8 @@ export default function Products() {
                         product_img_url: item.product_image_link,
                         product_description_1: item.product_description_1,
                         product_description_2: item.product_description_2,
-                        page_layout: item.page_layout
+                        page_layout: item.page_layout,
+                        product_id: item.product_id
                     }));
                     setProducts(parsed);
                 } else {
@@ -48,10 +50,10 @@ export default function Products() {
 
     const ProductsCollection = (() => {
         if (loadingProducts) {
-            return [{ product_name: "Loading", product_img_url: "Loading", product_description_1: "Loading", product_description_2: "Loading" , page_layout: "Loading"}];
+            return [{ product_name: "Loading", product_img_url: "Loading", product_description_1: "Loading", product_description_2: "Loading" , page_layout: "Loading", product_id: "Loading"}];
         }
         if (productsError) {
-            return [{ product_name: "Error", product_img_url: "Error", product_description_1: "Error", product_description_2: "Error" , page_layout: "Error"}];
+            return [{ product_name: "Error", product_img_url: "Error", product_description_1: "Error", product_description_2: "Error" , page_layout: "Error", product_id: "Error"}];
         }
         return theProducts;
     })();
@@ -71,7 +73,7 @@ export default function Products() {
 }
 function ProductCard({ content }: { content: ProductsItem }) {
     return (
-        <a className="card-news" href={content.product_name.toLowerCase().replace(" ", "-")}>
+        <a className="card-news" href={"products/" + content.product_id}>
             <img src={content.product_img_url} className="card-news-image"></img>
             <div className="card-news-text">{content.product_description_1}</div>
             <div className="card-news-text">{content.product_description_2}</div>

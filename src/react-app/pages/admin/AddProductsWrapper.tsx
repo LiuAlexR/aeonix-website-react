@@ -5,10 +5,11 @@ interface Inputs {
     productName: string;
     description1: string;
     description2: string;
+    productID: string;
     password: string
 }
 export default function AddProductsWrapper() {
-    const [inputs, setInputs] = useState<Inputs>({ imageLink: "", productName: "", description1: "", description2: "", password: "" });
+    const [inputs, setInputs] = useState<Inputs>({ imageLink: "", productName: "", description1: "", description2: "", password: "", productID: "" });
     const [loading, setLoading] = useState<boolean>(false);
     const [message, setMessage] = useState<string | null>(null);
     const [isError, setIsError] = useState<boolean>(false);
@@ -51,7 +52,7 @@ export default function AddProductsWrapper() {
 
             setMessage("Your message has been sent successfully!");
             setIsError(false);
-            setInputs({ imageLink: "", productName: "", description1: "", description2: "", password: "" }); // Clear form fields
+            setInputs({ imageLink: "", productName: "", description1: "", description2: "", password: "", productID: "" }); // Clear form fields
 
         } catch (error: any) {
             console.error("Error submitting form:", error);
@@ -83,6 +84,15 @@ export default function AddProductsWrapper() {
                             type="string"
                             name="productName"
                             value={inputs.productName}
+                            onChange={handleChange}
+                            className="form-admin-news-text"
+                        />
+                    </label>
+                    <label className="form-admin-news-label">Enter the Product ID: <br />
+                        <input
+                            type="string"
+                            name="productID"
+                            value={inputs.productID}
                             onChange={handleChange}
                             className="form-admin-news-text"
                         />

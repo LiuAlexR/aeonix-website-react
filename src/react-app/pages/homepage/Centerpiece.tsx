@@ -10,7 +10,7 @@ export default function Centerpiece() {
             <div id="video_overlay"></div>
             <div id="center_text">
                 <h1>
-                    Flight<br />Revolutionized
+                    Powering<br />the Future
                 </h1>
             </div>
             <div className="video_spacer"></div>
