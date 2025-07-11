@@ -16,18 +16,15 @@ export default function Middlepiece() {
                 <img src={BatteryPic} id="homepage-pic-1" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700"></img>
             </div>
             <div id="card2" className="card-middle" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="200">
-                Aeonix Energy’s anode-free battery technology is designed for UAVs, eVTOLs, and beyond. Revolutionizing energy storage for a cleaner, safer, and more efficient world.
+                Aeonix Energy's anode-free battery technology is designed for UAVs, eVTOLs, and beyond.<br /> <br /> <br /> Revolutionizing energy storage for a cleaner, safer, and more efficient world.
             </div>
             <div id="card3-wrapper">
                 <div id="card3" className="card-middle" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="400">
-                    *Example graphic based on how the battery works?*
+                    <b>High Energy Density</b> <br /><br /> Up to 500 Wh/kg <br /><br /> Pushing the boundaries of energy storage for aerial applications.
                 </div>
                 <img src={Graphic} id="homepage-pic-3" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700"></img>
             </div>
-            <div id="card4" className="card-middle" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="600">
-                *Example of usage/case studies?*
-            </div>
-            <div id="card5" className="card-middle" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="800">
+            <div id="card5" className="card-middle" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="700">
                 <h1>We are pioneering the future. <br /> Come work with us!</h1>
             </div>
         </div>

@@ -1,8 +1,6 @@
 import './SponsorCardTop.css';
-import FacebookLogo from "../../assets/media/homepage/sponsorLogos/Facebook.png";
-import TeslaLogo from "../../assets/media/homepage/sponsorLogos/Tesla.png";
-import RedditLogo from "../../assets/media/homepage/sponsorLogos/Reddit.jpeg";
-import Stardew from "../../assets/media/homepage/sponsorLogos/Stardew.jpeg";
+import PNNL from "../../assets/media/homepage/sponsorLogos/pnnl.svg";
+import Dod from "../../assets/media/homepage/sponsorLogos/DoD.png";
 export default function SponsorCardTop() {
     return (
         <div id="sponsor-card-wrapper">
@@ -10,10 +8,8 @@ export default function SponsorCardTop() {
                 Trusted. Proven. The Future.
             </div>
             <div className="logo-wrapper">
-                <img src={FacebookLogo} className='sponsor-logo'></img>
-                <img src={TeslaLogo} className='sponsor-logo'></img>
-                <img src={RedditLogo} className='sponsor-logo'></img>
-                <img src={Stardew} className='sponsor-logo'></img>
+                <img src={PNNL} className='sponsor-logo'></img>
+                <img src={Dod} className='sponsor-logo'></img>
             </div>
 
 

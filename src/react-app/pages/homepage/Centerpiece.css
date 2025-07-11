@@ -2,8 +2,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    min-height: 105vh;
-    min-width: 105vw;
+    height: 105vh;
+    width: 105vw;
     z-index: -3;
 }
 #center_text {

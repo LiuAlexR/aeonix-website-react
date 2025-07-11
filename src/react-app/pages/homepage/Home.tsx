@@ -15,9 +15,9 @@ function Home() {
       <Centerpiece />
       <Middlepiece />
       <SpinningImage />
-      
-      <SponsorCardTop />
       <ImageWithText />
+      <SponsorCardTop />
+      
       <CarouselComponent />
       <Footer />
     </>

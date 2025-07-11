@@ -1,6 +1,6 @@
 import logo from "../../assets/logos/aeonix.png";
 //import DroneVideo from "../../assets/media/homepage/drone_video.mp4";
-import DroneImage from "../../assets/media/homepage/drone-fighting-fire.png"
+import DroneImage from "../../assets/media/homepage/drone-watering-fields-2.png"
 import "./Centerpiece.css";
 export default function Centerpiece() {
     return (

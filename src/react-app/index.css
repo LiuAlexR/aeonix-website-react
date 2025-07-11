@@ -5,13 +5,13 @@
   --primary-light: 245, 245, 245; /* Off-white for main backgrounds, softer than pure white */
   --white-to-hover: 210, 210, 210; /* A light grey for hover states on light backgrounds */
 
-  --primary-accent: 224, 112, 33; /* A brighter, more saturated version of your logo color for main accents */
+  --primary-accent: 126, 152, 227; /* A brighter, more saturated version of your logo color for main accents */
   --dark-accent: 140, 58, 12;     /* A deeper, richer tone of your logo color for dark accents/hovers */
   --light-accent: 255, 170, 70;   /* A lighter, more playful version for subtle accents or highlights */
 
   --neutral-gray: 150, 150, 150; /* A mid-tone grey for borders, dividers, or subtle text */
   --light-gray: 225, 225, 225;
-  --dark-gray: 100, 100, 100;
+  --dark-gray: 50, 50, 70;
   --very-light-gray: 240, 240, 235;
 }
 body {

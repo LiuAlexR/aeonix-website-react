@@ -44,7 +44,7 @@ export default function Footer() {
                 <div className="footer-section footer-contact">
                     <h3>Get in Touch</h3>
                     <p>
-                        <i className="fas fa-map-marker-alt" /> ADDRESS
+                        <i className="fas fa-map-marker-alt" /> 1990 Milestone Drive, Salt Lake City, UT
                     </p>
                     <p>
                         <i className="fas fa-phone" /> PHONE
