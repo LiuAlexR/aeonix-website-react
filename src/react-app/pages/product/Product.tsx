@@ -62,7 +62,7 @@ function Product() {
         product_description_1: "Loading product details...",
         product_description_2: "",
         product_id: "loading",
-        product_image_link: "", // Still an empty string here, handled below
+        product_image_link: "",
         product_name: "Loading..."
       };
     }
@@ -73,15 +73,14 @@ function Product() {
         product_description_1: `Error: ${productsError}`,
         product_description_2: "",
         product_id: "error",
-        product_image_link: "", // Still an empty string here, handled below
+        product_image_link: "",
         product_name: "Error loading product"
       };
     }
     // If loaded and no error, return the first product from the fetched array
     // Assuming you always expect a single product for a given ID
-    return theProducts.length > 0 ? theProducts[0] : null; // Return null if no product found
+    return theProducts.length > 0 ? theProducts[0] : null;
   })();
-
 
   // Handle loading, error, and no-product-found states
   if (loadingProducts) {
@@ -118,10 +117,49 @@ function Product() {
     <>
       <title>{productToDisplay.product_name + ' | Aeonix Energy'}</title>
       <Navbar />
-      {productToDisplay.product_image_link && (
-        <img src={productToDisplay.product_image_link} id="about_center_image" alt={productToDisplay.product_name || "Product Image"}></img>
-      )}
-      <div id="about_center_image_spacer"></div>
+
+      <main className="product-page-content">
+        {productToDisplay.product_image_link && (
+          <img
+            src={productToDisplay.product_image_link}
+            id="product-hero-image"
+            alt={productToDisplay.product_name || "Product Image"}
+          />
+        )}
+        <div id="product-hero-image-spacer"></div>
+
+        <section className="product-details-container">
+          <h1 className="product-name">{productToDisplay.product_name}</h1>
+
+          {productToDisplay.page_layout === "layout-1" && (
+            <div className="product-description-layout-1">
+              <p>{productToDisplay.product_description_1}</p>
+              {productToDisplay.product_description_2 && (
+                <p>{productToDisplay.product_description_2}</p>
+              )}
+            </div>
+          )}
+
+          {productToDisplay.page_layout === "layout-2" && (
+            <div className="product-description-layout-2">
+              <p className="description-section-1">{productToDisplay.product_description_1}</p>
+              {productToDisplay.product_description_2 && (
+                <p className="description-section-2">{productToDisplay.product_description_2}</p>
+              )}
+            </div>
+          )}
+
+          {(!productToDisplay.page_layout || (productToDisplay.page_layout !== "layout-1" && productToDisplay.page_layout !== "layout-2")) && (
+            <div className="product-description-default">
+              <p>{productToDisplay.product_description_1}</p>
+              {productToDisplay.product_description_2 && (
+                <p>{productToDisplay.product_description_2}</p>
+              )}
+            </div>
+          )}
+        </section>
+      </main>
+
       <Footer />
     </>
   );
