@@ -1,0 +1,1282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="C" producer="main_bin" version="7.22.0" root="/home/alex/Documents/Programming/Projects/aeonix-website-react/homepage_video">
+ <profile frame_rate_num="30000" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="1" description="HD 1080p 29.97 fps" display_aspect_num="16" frame_rate_den="1001" width="1920" height="1080" sample_aspect_den="1"/>
+ <producer id="producer0" in="00:00:00.000" out="00:16:53.020">
+  <property name="length">2147483647</property>
+  <property name="eof">continue</property>
+  <property name="resource">black</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">color</property>
+  <property name="kdenlive:playlistid">black_track</property>
+  <property name="mlt_image_format">rgba</property>
+  <property name="set.test_audio">0</property>
+ </producer>
+ <playlist id="playlist0">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist1">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor0" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">89</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist0"/>
+  <track hide="video" producer="playlist1"/>
+  <filter id="filter0">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter1">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter2">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <playlist id="playlist2">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist3">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor1" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">89</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist2"/>
+  <track hide="video" producer="playlist3"/>
+  <filter id="filter3">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter4">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter5">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <producer id="producer1" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-city.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">21</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">9416564</property>
+  <property name="kdenlive:file_hash">99f0fa2d206af8abac10d2f74fc5dbab</property>
+ </producer>
+ <producer id="producer2" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-soldier.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">27</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6271471</property>
+  <property name="kdenlive:file_hash">3accb0fd1884cf9f8a2aa04f331ae886</property>
+ </producer>
+ <producer id="producer3" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-over-city.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">25</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">7845041</property>
+  <property name="kdenlive:file_hash">c0401e54b5b2bcde192528978702ba97</property>
+ </producer>
+ <producer id="producer4" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-construction.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">22</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">7441786</property>
+  <property name="kdenlive:file_hash">f6533aa3138f94b74098dce6715ccec8</property>
+ </producer>
+ <playlist id="playlist4">
+  <entry producer="producer1" in="00:00:00.000" out="00:00:02.970">
+   <property name="kdenlive:id">21</property>
+   <property name="kdenlive:activeeffect">0</property>
+   <filter id="filter6" in="00:00:02.603" out="00:00:02.970">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="alpha">00:00:00.000=1;00:00:00.367=0</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+   <filter id="filter7" out="00:00:00.334">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="alpha">00:00:00.000=0;00:00:00.334=1</property>
+   </filter>
+  </entry>
+  <entry producer="producer2" in="00:00:00.000" out="00:00:02.970">
+   <property name="kdenlive:id">27</property>
+   <filter id="filter8" out="00:00:00.334">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="alpha">00:00:00.000=0;00:00:00.334=1</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+   <filter id="filter9" in="00:00:02.569" out="00:00:02.970">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="alpha">00:00:00.000=1;00:00:00.400=0</property>
+   </filter>
+  </entry>
+  <entry producer="producer3" in="00:00:00.000" out="00:00:02.970">
+   <property name="kdenlive:id">25</property>
+   <filter id="filter10" out="00:00:00.601">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="alpha">00:00:00.000=0;00:00:00.601=1</property>
+   </filter>
+   <filter id="filter11" in="00:00:02.336" out="00:00:02.970">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="alpha">00:00:00.000=1;00:00:00.634=0</property>
+   </filter>
+  </entry>
+  <entry producer="producer4" in="00:00:00.000" out="00:00:02.970">
+   <property name="kdenlive:id">22</property>
+   <filter id="filter12" out="00:00:00.701">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="alpha">00:00:00.000=0;00:00:00.701=1</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+   <filter id="filter13" in="00:00:02.302" out="00:00:02.970">
+    <property name="start">1</property>
+    <property name="level">1</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="alpha">00:00:00.000=1;00:00:00.667=0</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist5"/>
+ <tractor id="tractor2" in="00:00:00.000" out="00:00:11.979">
+  <property name="kdenlive:trackheight">89</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist4"/>
+  <track hide="audio" producer="playlist5"/>
+ </tractor>
+ <playlist id="playlist6"/>
+ <playlist id="playlist7"/>
+ <tractor id="tractor3" in="00:00:00.000">
+  <property name="kdenlive:trackheight">89</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist6"/>
+  <track hide="audio" producer="playlist7"/>
+ </tractor>
+ <tractor id="{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}" in="00:00:00.000" out="00:16:53.020">
+  <property name="kdenlive:uuid">{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}</property>
+  <property name="kdenlive:clipname">Sequence 1</property>
+  <property name="kdenlive:sequenceproperties.hasAudio">1</property>
+  <property name="kdenlive:sequenceproperties.hasVideo">1</property>
+  <property name="kdenlive:sequenceproperties.activeTrack">2</property>
+  <property name="kdenlive:sequenceproperties.tracksCount">4</property>
+  <property name="kdenlive:sequenceproperties.documentuuid">{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}</property>
+  <property name="kdenlive:duration">00:00:12;00</property>
+  <property name="kdenlive:maxduration">360</property>
+  <property name="kdenlive:producer_type">17</property>
+  <property name="kdenlive:id">3</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_hash">73b9cdcc4b15782692604a8a394e73b8</property>
+  <property name="kdenlive:folderid">2</property>
+  <property name="kdenlive:sequenceproperties.audioTarget">1</property>
+  <property name="kdenlive:sequenceproperties.tracks">4</property>
+  <property name="kdenlive:sequenceproperties.verticalzoom">1</property>
+  <property name="kdenlive:sequenceproperties.videoTarget">2</property>
+  <property name="kdenlive:sequenceproperties.zonein">0</property>
+  <property name="kdenlive:sequenceproperties.zoneout">75</property>
+  <property name="kdenlive:sequenceproperties.zoom">4</property>
+  <property name="kdenlive:sequenceproperties.groups">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.guides">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.position">317</property>
+  <property name="kdenlive:sequenceproperties.scrollPos">0</property>
+  <property name="kdenlive:sequenceproperties.disablepreview">0</property>
+  <track producer="producer0"/>
+  <track producer="tractor0"/>
+  <track producer="tractor1"/>
+  <track producer="tractor2"/>
+  <track producer="tractor3"/>
+  <transition id="transition0">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">0</property>
+   <property name="b_track">2</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition2">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition3">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <filter id="filter14">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter15">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <producer id="producer5" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">411</property>
+  <property name="meta.media.height">361</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">6</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">12942</property>
+  <property name="kdenlive:file_hash">e09c0c099f127d54d331e06d2b6e6307</property>
+ </producer>
+ <producer id="producer6" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix_dark.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">339</property>
+  <property name="meta.media.height">89</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">7</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">5895</property>
+  <property name="kdenlive:file_hash">ba72f250caab0cb38521a2355ea6917d</property>
+ </producer>
+ <producer id="producer7" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix_energy_dark.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">333</property>
+  <property name="meta.media.height">122</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">8</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6050</property>
+  <property name="kdenlive:file_hash">537ca5cff365adfd8f229fd2643e2821</property>
+ </producer>
+ <producer id="producer8" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix_energy_light.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">333</property>
+  <property name="meta.media.height">122</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">9</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6374</property>
+  <property name="kdenlive:file_hash">76e847e2488b05172f46c19c29a64611</property>
+ </producer>
+ <producer id="producer9" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix_exclusive.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">339</property>
+  <property name="meta.media.height">89</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">10</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">5657</property>
+  <property name="kdenlive:file_hash">01ada3a29530f30758d42fc8292ce174</property>
+ </producer>
+ <producer id="producer10" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix_transparent_background (copy).png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">411</property>
+  <property name="meta.media.height">361</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">11</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6359</property>
+  <property name="kdenlive:file_hash">9d468b59c1995a060fa58bfae939094a</property>
+ </producer>
+ <producer id="producer11" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/logos/aeonix_transparent_background.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">411</property>
+  <property name="meta.media.height">361</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">5</property>
+  <property name="kdenlive:id">12</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6359</property>
+  <property name="kdenlive:file_hash">9d468b59c1995a060fa58bfae939094a</property>
+ </producer>
+ <producer id="producer12" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/about/Earth.jpeg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">318</property>
+  <property name="meta.media.height">159</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">14</property>
+  <property name="kdenlive:id">15</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">8038</property>
+  <property name="kdenlive:file_hash">2b7f8883bc6e8d363d9acfd0d5c7c10c</property>
+ </producer>
+ <producer id="producer13" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/about/person.jpeg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">204</property>
+  <property name="meta.media.height">192</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">14</property>
+  <property name="kdenlive:id">16</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">5176</property>
+  <property name="kdenlive:file_hash">fe9393e49f81e32b1a54ae5d24110924</property>
+ </producer>
+ <producer id="producer14" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/contact/Drone.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">4608</property>
+  <property name="meta.media.height">3456</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">17</property>
+  <property name="kdenlive:id">18</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">1022339</property>
+  <property name="kdenlive:file_hash">95a1d9c03d351f7f7a018d37681b845e</property>
+ </producer>
+ <producer id="producer15" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-city-possibly-2.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">20</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">9416564</property>
+  <property name="kdenlive:file_hash">99f0fa2d206af8abac10d2f74fc5dbab</property>
+ </producer>
+ <producer id="producer16" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-fighting-fire.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">2490</property>
+  <property name="meta.media.height">1364</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">23</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">4624288</property>
+  <property name="kdenlive:file_hash">ed005df6fa5a67f27bcb18fb50c61eb5</property>
+ </producer>
+ <producer id="producer17" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-human-field.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">24</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">8761275</property>
+  <property name="kdenlive:file_hash">ee786e9aa5128fec2f5cd22040d47903</property>
+ </producer>
+ <producer id="producer18" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-over-landscape.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">26</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">7475909</property>
+  <property name="kdenlive:file_hash">b968d59ae016d08577331759d4613cb6</property>
+ </producer>
+ <producer id="producer19" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-watering-fields-2.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">1445</property>
+  <property name="meta.media.height">788</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">28</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">3040648</property>
+  <property name="kdenlive:file_hash">57a2b22efbb3a88eacd6575d91cdf3fc</property>
+ </producer>
+ <producer id="producer20" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-watering-fields-3.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">29</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">7389975</property>
+  <property name="kdenlive:file_hash">a2b23504aa012e56dc82d665749af78c</property>
+ </producer>
+ <producer id="producer21" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/Drone.jpeg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">225</property>
+  <property name="meta.media.height">225</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">33</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">5168</property>
+  <property name="kdenlive:file_hash">6168d0ef68033fc99d94e8768754bc74</property>
+ </producer>
+ <producer id="producer22" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/Drone.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">225</property>
+  <property name="meta.media.height">225</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">34</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">26904</property>
+  <property name="kdenlive:file_hash">f094424ceaf401deb6bc7f2e586725c0</property>
+ </producer>
+ <producer id="producer23" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-watering-fields.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">2048</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">31</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">5215886</property>
+  <property name="kdenlive:file_hash">61a52a3f93876b49e3e70d0d663d0c61</property>
+ </producer>
+ <producer id="producer24" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-watering-fields-4.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">30</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">9486689</property>
+  <property name="kdenlive:file_hash">44cfcb4ce443fc429fba1c2e182d8312</property>
+ </producer>
+ <producer id="producer25" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone-wind-turbine.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">32</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6621958</property>
+  <property name="kdenlive:file_hash">783efabbc326fc532250ac518202766d</property>
+ </producer>
+ <producer id="producer26" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/plane-laser.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">38</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">3190787</property>
+  <property name="kdenlive:file_hash">2320f946288d4c09eeb103a8d590ef3a</property>
+ </producer>
+ <chain id="chain0" out="00:00:16.216">
+  <property name="length">487</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/drone_video.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">29.97</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">960</property>
+  <property name="meta.media.0.codec.rotate">0</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.color_trc">1</property>
+  <property name="meta.media.0.codec.name">h264</property>
+  <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+  <property name="meta.media.0.codec.bit_rate">5741660</property>
+  <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
+  <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">2275</property>
+  <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
+  <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">512</property>
+  <property name="meta.attr.compatible_brands.markup">isomiso2avc1mp41</property>
+  <property name="meta.attr.encoder.markup">Lavf60.16.100</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="format">3</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="vstream">0</property>
+  <property name="meta.media.frame_rate_num">30000</property>
+  <property name="meta.media.frame_rate_den">1001</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.color_trc">1</property>
+  <property name="meta.media.has_b_frames">2</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">960</property>
+  <property name="meta.media.color_range">mpeg</property>
+  <property name="astream">0</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">35</property>
+  <property name="mute_on_pause">0</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_size">11685872</property>
+  <property name="kdenlive:file_hash">1cdf710cecab47dc2b46a529f19b3086</property>
+  <property name="kdenlive:audio_max1">1</property>
+ </chain>
+ <producer id="producer27" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/graphic.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">2048</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">36</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">4027458</property>
+  <property name="kdenlive:file_hash">f1ca7f436652e9be15f8667525b22916</property>
+ </producer>
+ <producer id="producer28" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/quartercircle.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">500</property>
+  <property name="meta.media.height">500</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">40</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6564</property>
+  <property name="kdenlive:file_hash">d7d21407f9856bd9601e1b2af9ceafb3</property>
+ </producer>
+ <producer id="producer29" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/Salt Lake City.jpeg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">357</property>
+  <property name="meta.media.height">141</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">41</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">10526</property>
+  <property name="kdenlive:file_hash">d4a1f40f285420e4a31efa6056459424</property>
+ </producer>
+ <producer id="producer30" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/plane-desert.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2816</property>
+  <property name="meta.media.height">1536</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">37</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">6671426</property>
+  <property name="kdenlive:file_hash">7c5b623645742574a24fcb8d8390f24c</property>
+ </producer>
+ <producer id="producer31" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/pouch-cell.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">2048</property>
+  <property name="meta.media.height">2048</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">19</property>
+  <property name="kdenlive:id">39</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">2929896</property>
+  <property name="kdenlive:file_hash">bf0b4aa4d16da625e26b6eeeebce66a2</property>
+ </producer>
+ <producer id="producer32" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/carousel_photos/man-in-front-of-machine.jpg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">1536</property>
+  <property name="meta.media.height">1024</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">42</property>
+  <property name="kdenlive:id">43</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">116761</property>
+  <property name="kdenlive:file_hash">5bc33b8cd7e2ddeabd2fdeb79ded8e65</property>
+ </producer>
+ <producer id="producer33" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/sponsorLogos/DoD.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">867</property>
+  <property name="meta.media.height">867</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">44</property>
+  <property name="kdenlive:id">45</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">435202</property>
+  <property name="kdenlive:file_hash">334b8c6918b485f408de88ec01522c04</property>
+ </producer>
+ <producer id="producer34" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/sponsorLogos/Facebook.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">225</property>
+  <property name="meta.media.height">225</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">44</property>
+  <property name="kdenlive:id">46</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">1452</property>
+  <property name="kdenlive:file_hash">1dc6b33c23d4d37a8412ed47e80bc900</property>
+ </producer>
+ <producer id="producer35" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/sponsorLogos/pnnl.svg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">483</property>
+  <property name="meta.media.height">207</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">44</property>
+  <property name="kdenlive:id">47</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">8409</property>
+  <property name="kdenlive:file_hash">eaf7aea114c0189989830772516082e9</property>
+ </producer>
+ <producer id="producer36" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/sponsorLogos/Reddit.jpeg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">204</property>
+  <property name="meta.media.height">192</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">44</property>
+  <property name="kdenlive:id">48</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">8067</property>
+  <property name="kdenlive:file_hash">1fa5663dea4cb73f6f9ecd2b3e30ffe5</property>
+ </producer>
+ <producer id="producer37" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/sponsorLogos/Stardew.jpeg</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">194</property>
+  <property name="meta.media.height">181</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">44</property>
+  <property name="kdenlive:id">49</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">5330</property>
+  <property name="kdenlive:file_hash">59c02b911eb9b3e21f0ce7320c2dd28a</property>
+ </producer>
+ <producer id="producer38" in="00:00:00.000" out="00:00:04.972">
+  <property name="length">00:00:05.005</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/alex/Documents/Programming/Projects/aeonix-website-react/src/react-app/assets/media/homepage/sponsorLogos/Tesla.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">1</property>
+  <property name="meta.media.width">204</property>
+  <property name="meta.media.height">192</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:clipname"/>
+  <property name="kdenlive:duration">00:00:05;00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">44</property>
+  <property name="kdenlive:id">50</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">2424</property>
+  <property name="kdenlive:file_hash">3b351ae0b95bb5ddfbda780dd3f2c3bd</property>
+ </producer>
+ <playlist id="main_bin">
+  <property name="kdenlive:folder.-1.2">Sequences</property>
+  <property name="kdenlive:sequenceFolder">2</property>
+  <property name="kdenlive:folder.-1.4">assets</property>
+  <property name="kdenlive:folder.4.5">logos</property>
+  <property name="kdenlive:folder.4.13">media</property>
+  <property name="kdenlive:folder.13.14">about</property>
+  <property name="kdenlive:folder.13.17">contact</property>
+  <property name="kdenlive:folder.13.19">homepage</property>
+  <property name="kdenlive:folder.19.42">carousel_photos</property>
+  <property name="kdenlive:folder.19.44">sponsorLogos</property>
+  <property name="kdenlive:docproperties.audioChannels">2</property>
+  <property name="kdenlive:docproperties.browserurl">/home/alex/Documents/Programming/Projects/aeonix_website/public/resources/images/index/</property>
+  <property name="kdenlive:docproperties.compositing">1</property>
+  <property name="kdenlive:docproperties.documentid">1752598162145</property>
+  <property name="kdenlive:docproperties.enableTimelineZone">0</property>
+  <property name="kdenlive:docproperties.enableexternalproxy">0</property>
+  <property name="kdenlive:docproperties.enableproxy">0</property>
+  <property name="kdenlive:docproperties.externalproxyparams"/>
+  <property name="kdenlive:docproperties.generateimageproxy">0</property>
+  <property name="kdenlive:docproperties.generateproxy">0</property>
+  <property name="kdenlive:docproperties.guidesCategories">[
+    {
+        "color": "#9b59b6",
+        "comment": "Category 1",
+        "index": 0
+    },
+    {
+        "color": "#3daee9",
+        "comment": "Category 2",
+        "index": 1
+    },
+    {
+        "color": "#1abc9c",
+        "comment": "Category 3",
+        "index": 2
+    },
+    {
+        "color": "#1cdc9a",
+        "comment": "Category 4",
+        "index": 3
+    },
+    {
+        "color": "#c9ce3b",
+        "comment": "Category 5",
+        "index": 4
+    },
+    {
+        "color": "#fdbc4b",
+        "comment": "Category 6",
+        "index": 5
+    },
+    {
+        "color": "#f39c1f",
+        "comment": "Category 7",
+        "index": 6
+    },
+    {
+        "color": "#f47750",
+        "comment": "Category 8",
+        "index": 7
+    },
+    {
+        "color": "#da4453",
+        "comment": "Category 9",
+        "index": 8
+    }
+]
+</property>
+  <property name="kdenlive:docproperties.kdenliveversion">23.08.5</property>
+  <property name="kdenlive:docproperties.previewextension"/>
+  <property name="kdenlive:docproperties.previewparameters"/>
+  <property name="kdenlive:docproperties.profile">atsc_1080p_2997</property>
+  <property name="kdenlive:docproperties.proxyextension"/>
+  <property name="kdenlive:docproperties.proxyimageminsize">2000</property>
+  <property name="kdenlive:docproperties.proxyimagesize">800</property>
+  <property name="kdenlive:docproperties.proxyminsize">1000</property>
+  <property name="kdenlive:docproperties.proxyparams"/>
+  <property name="kdenlive:docproperties.proxyresize">640</property>
+  <property name="kdenlive:docproperties.seekOffset">30000</property>
+  <property name="kdenlive:docproperties.uuid">{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}</property>
+  <property name="kdenlive:docproperties.version">1.1</property>
+  <property name="kdenlive:expandedFolders">13;4;19</property>
+  <property name="kdenlive:binZoom">4</property>
+  <property name="kdenlive:documentnotes"/>
+  <property name="kdenlive:docproperties.opensequences">{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}</property>
+  <property name="kdenlive:docproperties.activetimeline">{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}</property>
+  <property name="kdenlive:docproperties.rendercategory">Generic (HD for web, mobile devices...)</property>
+  <property name="kdenlive:docproperties.rendercustomquality">-1</property>
+  <property name="kdenlive:docproperties.renderendguide">-1</property>
+  <property name="kdenlive:docproperties.renderexportaudio">0</property>
+  <property name="kdenlive:docproperties.renderfullcolorrange">0</property>
+  <property name="kdenlive:docproperties.rendermode">0</property>
+  <property name="kdenlive:docproperties.renderplay">0</property>
+  <property name="kdenlive:docproperties.renderpreview">0</property>
+  <property name="kdenlive:docproperties.renderprofile">MP4-H264/AAC</property>
+  <property name="kdenlive:docproperties.renderrescale">0</property>
+  <property name="kdenlive:docproperties.renderrescaleheight">540</property>
+  <property name="kdenlive:docproperties.renderrescalewidth">960</property>
+  <property name="kdenlive:docproperties.renderspeed">6</property>
+  <property name="kdenlive:docproperties.renderstartguide">-1</property>
+  <property name="kdenlive:docproperties.rendertcoverlay">0</property>
+  <property name="kdenlive:docproperties.rendertctype">-1</property>
+  <property name="kdenlive:docproperties.rendertwopass">0</property>
+  <property name="kdenlive:docproperties.renderurl">the-video.mp4</property>
+  <property name="xml_retain">1</property>
+  <entry producer="{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}" in="00:00:00.000" out="00:00:00.000"/>
+  <entry producer="producer5" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer6" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer7" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer8" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer9" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer10" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer11" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer12" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer13" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer14" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer15" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer1" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer4" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer16" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer17" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer18" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer19" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer2" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer3" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer20" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer21" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer22" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer23" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer24" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer25" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer26" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="chain0" in="00:00:00.000" out="00:00:16.216"/>
+  <entry producer="producer27" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer28" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer29" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer30" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer31" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer32" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer33" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer34" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer35" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer36" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer37" in="00:00:00.000" out="00:00:04.972"/>
+  <entry producer="producer38" in="00:00:00.000" out="00:00:04.972"/>
+ </playlist>
+ <tractor id="tractor4" in="00:00:00.000" out="00:00:12.012">
+  <property name="kdenlive:projectTractor">1</property>
+  <track producer="{2a0a4b45-c9a0-4467-8ab3-d9bd93e14f3c}" in="00:00:00.000" out="00:00:12.012"/>
+ </tractor>
+</mlt>

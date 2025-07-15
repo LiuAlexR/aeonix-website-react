@@ -1,7 +1,7 @@
 #background_video {
     position: fixed;
-    left: 0;
-    top: 0;
+    left: -2vw;
+    top: -2vh;
     height: 105vh;
     width: 105vw;
     z-index: -3;
