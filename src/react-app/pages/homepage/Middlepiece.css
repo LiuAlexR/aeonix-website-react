@@ -50,10 +50,10 @@
     align-items: center;
 }
 #homepage-pic-3 {
-    width: 20rem;
-    height: 15rem;
+    width: 15vw;
+    height: 12vw;
     position: relative;
-    right: 35rem;
+    right: calc(30vw - 5rem);
     border-radius: 25px;
     outline-offset: 5px;
     outline-color: black;
