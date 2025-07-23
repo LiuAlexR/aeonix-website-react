@@ -7,10 +7,10 @@ import "./Centerpiece.css";
 import { useEffect, useState } from "react";
 export default function Centerpiece() {
     const phrases = [
-        "Energy<br />That Goes Further",
-        "Built to Fly<br />Trusted to Perform",
-        "Redefining Lithium Batteries<br />From the Anode Up",
+        "Energy<br />That Goes Further", //Change to drone-fighting-fire / wind turbine (maybe generate new one) / remove landing sticks
         "Energy Independence<br />Engineered in the U.S.",
+        "Redefining Lithium Batteries",
+        "Built to Fly<br />Trusted to Perform",
         "Powering the Future<br />of Autonomous Flight",
     ];
 
