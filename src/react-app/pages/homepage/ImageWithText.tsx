@@ -13,7 +13,11 @@ export default function ImageWithText() {
             <div id="image-overlay"></div>
             <div id="image-text">
                 <h1 data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700">The Crossroads of the West</h1>
-                <p data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700 " data-aos-delay="300">Nestled in the heart of Salt Lake City, we are connected with industries from across the country</p>
+                <p data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700 " data-aos-delay="300">Our founding team has over a decade of experience in energy storage R&amp;D, U.S.
+government-funded innovation, and commercial prototyping. Aeonix is based in Salt
+Lake City, Utah — at the center of America’s defense and aerospace innovation
+
+corridor.</p>
             </div>
         </div>
     );

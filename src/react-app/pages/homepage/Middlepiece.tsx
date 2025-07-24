@@ -9,24 +9,31 @@ export default function Middlepiece() {
     }, [])
     return (
         <div id="card-wrapper-middle">
+            <div id="card5" className="card-middle" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="700">
+                <h1>Powering Tomorrow's Unmanned Missions</h1>
+            </div>
             <div id="card1-wrapper">
                 <div id="card1" className="card-middle" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="00">
-                    <h1>A Better Type of Battery</h1>
+                    Aeonix Energy is a high-energy battery company focused on anode-free lithium battery
+                    systems for drones, eVTOLs, and unmanned ground vehicles. We were founded in
+                    2023 as a spin-out of Storagenergy Technologies, leveraging over a decade of battery
+
+                    R&D, U.S. patents, and DOE/DoD funding.
                 </div>
                 <img src={BatteryPic} id="homepage-pic-1" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700"></img>
             </div>
-            <div id="card2" className="card-middle" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="200">
-                Aeonix Energy's anode-free battery technology is designed for UAVs, eVTOLs, and beyond.<br /> <br /> <br /> Revolutionizing energy storage for a cleaner, safer, and more efficient world.
-            </div>
-            <div id="card3-wrapper">
-                <div id="card3" className="card-middle" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="400">
-                    <b>High Energy Density</b> <br /><br /> Up to 500 Wh/kg <br /><br /> Pushing the boundaries of energy storage for aerial applications.
+            <div id="card2-wrapper">
+                <img src={Graphic} id="homepage-pic-2" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="700"></img>
+                <div id="card2" className="card-middle" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="200">
+                    We don't just promise innovation—we're delivering validated performance, rapid TRL
+                    advancement, and a focused path to manufacturing scale-up and deployment.
                 </div>
-                <img src={Graphic} id="homepage-pic-3" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700"></img>
+                
             </div>
-            <div id="card5" className="card-middle" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="700">
-                <h1>We are pioneering the future. <br /> Come work with us!</h1>
+            <div className="homepage-spacer">
+
             </div>
+
         </div>
     );
 }

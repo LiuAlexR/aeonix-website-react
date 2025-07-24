@@ -8,12 +8,12 @@
     background-color: rgb(var(--very-light-gray));
     border: 2px;
     transition: 0.3s;
-    max-width: 45vw;
+    width: 35vw;
     border-radius: 5px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -27,43 +27,47 @@
 }*/
 #homepage-pic-1 {
     width: 20rem;
-    height: 15rem;
     position: relative;
-    right: 30rem;
+    right: 15vw;
     border-radius: 25px;
     outline-offset: 5px;
     outline-color: black;
     outline-width: 2px;
     outline-style: solid;
+    z-index: 0;
 }
 #card1 {
+    position: relative;
+    margin-right: auto;
     margin-left: 10vw;
+    z-index: 2;
 }
 #card1-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#card3-wrapper {
+#card2-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#homepage-pic-3 {
-    width: 15vw;
-    height: 12vw;
+#homepage-pic-2 {
+    width: 15rem;
     position: relative;
-    right: calc(30vw - 5rem);
+    margin-right: auto;
+    margin-left: 15vw;
     border-radius: 25px;
     outline-offset: 5px;
     outline-color: black;
     outline-width: 2px;
     outline-style: solid;
+    z-index: 0;
 }
 #card2 {
     position: relative;
-    margin-left: auto;
-    margin-right: 10vw;
+    right: 10vw;
+    z-index: 2;
 }
 #card3 {
     margin-left: 15vw;
@@ -75,4 +79,7 @@
 #card5 {
     margin-left: auto;
     margin-right: auto;
+}
+.homepage-spacer{
+    height: 100px;
 }

@@ -1,17 +1,21 @@
 .item-carousel {
   width: 500px;
   height: 500px;
-  background-color: wheat;
+  background-color: rgb(var(--primary-light));
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
   margin: 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
+display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 .wrapper-carousel {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-color: rgb(var(--primary-light));
+    background-color: rgb(var(--primary-dark));
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    
 }

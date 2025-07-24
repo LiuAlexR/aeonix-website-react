@@ -150,7 +150,7 @@
     #bar_as_list {
         flex-direction: column;
         width: 100%;
-        background-color: rgba(var(--primary-dark), 0.95);
+        background-color: rgba(var(--primary-light), 0.95);
         position: absolute;
         top: 5rem;
         left: 0;

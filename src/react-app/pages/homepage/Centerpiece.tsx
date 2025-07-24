@@ -7,11 +7,11 @@ import "./Centerpiece.css";
 import { useEffect, useState } from "react";
 export default function Centerpiece() {
     const phrases = [
-        "Energy<br />That Goes Further", //Change to drone-fighting-fire / wind turbine (maybe generate new one) / remove landing sticks
+        "Powering the Future<br />of Autonomous Flight", //Change to drone-fighting-fire / wind turbine (maybe generate new one) / remove landing sticks
         "Energy Independence<br />Engineered in the U.S.",
         "Redefining Lithium Batteries",
         "Built to Fly<br />Trusted to Perform",
-        "Powering the Future<br />of Autonomous Flight",
+        "Energy<br />That Goes Further",
     ];
 
 
@@ -22,11 +22,11 @@ export default function Centerpiece() {
 
         const intervalId = setInterval(() => {
             setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-        }, 3000);
+        }, 4000);
 
 
         return () => clearInterval(intervalId);
-    }, [phrases.length]);
+    }, [currentPhraseIndex]);
       const textVariants = {
     hidden: { opacity: 0, y: 10 }, // Initial state: hidden and slightly above
     visible: { opacity: 1, y: 0 }, // Visible state: fully opaque at original position
@@ -39,7 +39,7 @@ export default function Centerpiece() {
             <div id="video_overlay"></div>
             <div id="center_text">
                 <AnimatePresence mode='wait'>
-                    <motion.h1 key={currentPhraseIndex} variants={textVariants} initial="hidden" animate="visible" exit="exit" transition={{ duration: 0.7, ease: "easeInOut"}} dangerouslySetInnerHTML={{__html: phrases[currentPhraseIndex]}}>
+                    <motion.h1 key={currentPhraseIndex} variants={textVariants} initial="hidden" animate="visible" exit="exit" transition={{ duration: 0.5, ease: "easeInOut"}} dangerouslySetInnerHTML={{__html: phrases[currentPhraseIndex]}}>
                         
                     </motion.h1>
                 </AnimatePresence>

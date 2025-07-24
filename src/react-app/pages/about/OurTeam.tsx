@@ -5,7 +5,7 @@ export default function OurTeam() {
         <div className="wrapper-team">
             <h1>Our Team</h1>
             <p>
-                Aeonix Energy is a spin-off from Storagenergy Technologies, founded in December 2023. We specialize in high-energy, anode-free battery technology designed to meet the needs of the rapidly growing UAV, eVTOL, and defenseindustries. Our team brings over 10 years of experience in battery R&D, manufacturing, and commercialization, with a focus on advancing sustainable energy solutions.    
+                At Aeonix Energy, our team brings together decades of experience in electrochemicalenergy storage, battery manufacturing, and commercialization. Led by industry veteransand scientists who have launched and scaled multiple breakthrough technologies, weare united by a shared mission: to redefine the boundaries of high-energy battery systems for next-generation aviation, defense, and mobility.<br /><br />Our leadership team includes PhDs and engineers with expertise spanning lithium metalchemistry, advanced manufacturing, battery integration, and supply chain resilience. From early-stage R&amp;D to pilot-scale production, we combine deep technical knowledgewith entrepreneurial vision.
             </p>
         </div>
         </>

@@ -14,7 +14,6 @@
     font-size: 2.5rem;
     text-align: right;
     z-index: -1;
-    animation: 2s fadeInUp;
 }
 @keyframes fadeInUp {
   0% {
