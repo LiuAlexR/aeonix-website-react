@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./Carousel.css";
+// import "./Carousel.css";
 export default function CarouselComponent() {
   const responsive = {
     superLargeDesktop: {

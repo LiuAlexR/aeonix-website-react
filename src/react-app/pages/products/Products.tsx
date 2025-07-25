@@ -73,7 +73,7 @@ export default function Products() {
 }
 function ProductCard({ content }: { content: ProductsItem }) {
     return (
-        <a className="card-news" href={"products/" + content.product_id}>
+        <a className="card-news" href={"technology/" + content.product_id}>
             <img src={content.product_img_url} className="card-news-image"></img>
             <div className="card-news-text">{content.product_description_1}</div>
             <div className="card-news-text">{content.product_description_2}</div>

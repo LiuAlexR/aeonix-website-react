@@ -85,7 +85,7 @@ function NavBarWrapper() {
     return (
         <ul id="bar_as_list">
             <NavBarItemNoDropdown title="Home" link="/" />
-            <NavBarItemWithDropdown title="Products" link="/Products" options={productsToDisplay} />
+            <NavBarItemWithDropdown title="Technology" link="/Technology" options={productsToDisplay} />
             <NavBarItemNoDropdown title="About Us" link="/about" />
             <NavBarItemNoDropdown title="News" link="/news" />
             <NavBarItemNoDropdown title="Contact Us" link="/contact" />

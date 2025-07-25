@@ -19,10 +19,11 @@
     border: 2px;
     transition: 0.3s;
     border-radius: 5px;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     text-align: center;
     width: 26rem;
     text-decoration: none;
+    margin-bottom: 2rem;
     /* 5px rounded corners */
 }
 
@@ -37,12 +38,14 @@
 }
 .card-news-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 2rem 2rem;
 }
 .card-news-text {
     padding: 1rem 1rem;
-
+    max-height: 20vh;
+    overflow: hidden;
     color: rgb(var(--primary-dark));
     text-decoration: none;   
 }

@@ -2,7 +2,7 @@
   --logo-color: 30, 58, 138; 
 --logo-color-dark: 15, 30, 100;
   --primary-dark: 26, 26, 26;   /* Very dark grey/near black for primary text or backgrounds */
-  --primary-light: 245, 245, 245; /* Off-white for main backgrounds, softer than pure white */
+  --primary-light: 255, 255, 255; /* Off-white for main backgrounds, softer than pure white */
   --white-to-hover: 210, 210, 210; /* A light grey for hover states on light backgrounds */
 
   --primary-accent: 126, 152, 227; /* A brighter, more saturated version of your logo color for main accents */
@@ -15,10 +15,14 @@
   --very-light-gray: 240, 240, 235;
 }
 body {
-  font-family: 'Futura', sans-serif;
+  font-family: 'Work Sans';
   margin: 0;
   background-color: var(--primary-light); 
 }
 html {
   scroll-behavior: smooth;
+  font-size: 1.2rem;
+}
+h1, h2, h3 {
+  font-family:"classico-urw", "Futura ";
 }

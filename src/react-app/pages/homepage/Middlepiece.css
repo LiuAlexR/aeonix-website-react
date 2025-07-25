@@ -4,8 +4,8 @@
 }
 
 .card-middle {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgb(var(--very-light-gray));
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* background-color: rgba(var(--very-light-gray), 1); */
     border: 2px;
     transition: 0.3s;
     width: 35vw;
@@ -16,7 +16,9 @@
     padding-right: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    text-align: center;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
     /* 5px rounded corners */
 }
 /*
@@ -39,7 +41,8 @@
 #card1 {
     position: relative;
     margin-right: auto;
-    margin-left: 10vw;
+    margin-left: auto;
+    width: 60vw;
     z-index: 2;
 }
 #card1-wrapper {
@@ -66,7 +69,9 @@
 }
 #card2 {
     position: relative;
-    right: 10vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60vw;
     z-index: 2;
 }
 #card3 {
@@ -79,6 +84,7 @@
 #card5 {
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.5rem;
 }
 .homepage-spacer{
     height: 100px;
