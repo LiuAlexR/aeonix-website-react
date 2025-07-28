@@ -2,7 +2,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 
 import Centerpiece from "./Centerpiece";
-import SponsorCardTop from "./SponsorCardTop";
+// import SponsorCardTop from "./SponsorCardTop";
 // import SpinningImage from "./SpinningImage";
 import Middlepiece from "./Middlepiece";
 import ImageWithText from "./ImageWithText";
@@ -18,7 +18,7 @@ function Home() {
       {/* <CarouselComponent /> */}
       {/* <SpinningImage /> */}
       <ImageWithText />
-      <SponsorCardTop />
+      {/* <SponsorCardTop /> */}
       
       
       <Footer />

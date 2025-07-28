@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import logo from "../../assets/logos/aeonix.png";
 
-
+import DroneImage from "../../assets/media/homepage/the-video.GIF";
 import DroneVideo from "../../assets/media/homepage/the-video.mp4";
 import "./Centerpiece.css";
 import { useEffect, useState } from "react";
@@ -34,8 +34,8 @@ export default function Centerpiece() {
   };
     return (
         <div id="centerpiece">
-            <video muted loop autoPlay id="background_video"><source src={DroneVideo} type="video/mp4" /></video>
-            {/* <img src={DroneImage} id="background_video"></img> */}
+            {/* <video muted loop autoPlay id="background_video"><source src={DroneVideo} type="video/mp4" /></video> */}
+            <img src={DroneImage} id="background_video"></img>
             <div id="video_overlay"></div>
             <div id="center_text">
                 <AnimatePresence mode='wait'>

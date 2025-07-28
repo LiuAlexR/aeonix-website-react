@@ -8,14 +8,11 @@
     /* background-color: rgba(var(--very-light-gray), 1); */
     border: 2px;
     transition: 0.3s;
-    width: 35vw;
+    width: 60vw;
     border-radius: 5px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
@@ -84,7 +81,7 @@
 #card5 {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    width: 100vw;
 }
 .homepage-spacer{
     height: 100px;

@@ -18,7 +18,7 @@ export default function Middlepiece() {
                     systems for drones, eVTOLs, and unmanned ground vehicles. We were founded in
                     2023 as a spin-out of Storagenergy Technologies, leveraging over a decade of battery
 
-                    R&D, U.S. patents, and DOE/DoD funding.
+                    R&D, U.S. patents, and DOE/DoD funding.<br /><br />
                 </div>
                 {/* <img src={BatteryPic} id="homepage-pic-1" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="700"></img> */}
             </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./Products.css";
+import Centerpiece from "../homepage/Centerpiece";
 interface ProductsItem {
     product_name: string; //was news date
     product_img_url: string;
@@ -10,7 +11,7 @@ interface ProductsItem {
     page_layout: string;
     product_id: string;
 }
-export default function Products() {
+function Products() {
     const [theProducts, setProducts] = useState<ProductsItem[]>([]);
     const [loadingProducts, setLoadingProducts] = useState(true);
     const [productsError, setProductsError] = useState<string | null>(null);
@@ -61,7 +62,8 @@ export default function Products() {
     return (
         <>
             <Navbar />
-            <div className="card-news-wrapper">
+            <Centerpiece />
+            <div className="card-products-wrapper">
             {ProductsCollection.map((name, index) => (
                 <ProductCard content={name} key={index} />
             ))}
@@ -73,11 +75,13 @@ export default function Products() {
 }
 function ProductCard({ content }: { content: ProductsItem }) {
     return (
-        <a className="card-news" href={"technology/" + content.product_id}>
-            <img src={content.product_img_url} className="card-news-image"></img>
-            <div className="card-news-text">{content.product_description_1}</div>
-            <div className="card-news-text">{content.product_description_2}</div>
+        <a className="card-products" href={"technology/" + content.product_id}>
+            <img src={content.product_img_url} className="card-products-image"></img>
+            <div className="card-products-text" dangerouslySetInnerHTML={{__html: content.product_description_1}}></div>
+            <div className="card-products-text" dangerouslySetInnerHTML={{__html: content.product_description_2}}></div>
         </a>
     );
 
 }
+
+export default Products;
