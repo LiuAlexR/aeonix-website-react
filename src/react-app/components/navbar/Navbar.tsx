@@ -34,58 +34,59 @@ function GetMobileMenu() {
         </>
     );
 }
-interface Product {
-    product_name: string;
-    product_id: string;
-}
+// interface Product {
+//     product_name: string;
+//     product_id: string;
+// }
 function NavBarWrapper() {
-    const [theProducts, setProduct] = useState<Product[]>([]);
-    const [loadingProducts, setLoadingProducts] = useState(true);
-    const [productsError, setProductsError] = useState<string | null>(null);
+    // const [theProducts, setProduct] = useState<Product[]>([]);
+    // const [loadingProducts, setLoadingProducts] = useState(true);
+    // const [productsError, setProductsError] = useState<string | null>(null);
 
-    useEffect(() => {
-        const fetchProductData = async () => {
-            try {
-                const response = await fetch('/api/products/names');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const result = await response.json();
+    // useEffect(() => {
+    //     const fetchProductData = async () => {
+    //         try {
+    //             const response = await fetch('/api/products/names');
+    //             if (!response.ok) {
+    //                 throw new Error(`HTTP error! status: ${response.status}`);
+    //             }
+    //             const result = await response.json();
 
-                if (Array.isArray(result)) {
-                    const parsed: Product[] = result.map((item: any) => ({
-                        product_id: item.product_id,
-                        product_name: item.product_name
-                    }));
-                    setProduct(parsed);
-                } else {
-                    setProductsError("Invalid data format received: Expected an array of product objects.");
-                }
-            } catch (err: any) {
-                console.error("Error fetching product data:", err);
-                setProductsError(err.message);
-            } finally {
-                setLoadingProducts(false);
-            }
-        };
+    //             if (Array.isArray(result)) {
+    //                 const parsed: Product[] = result.map((item: any) => ({
+    //                     product_id: item.product_id,
+    //                     product_name: item.product_name
+    //                 }));
+    //                 setProduct(parsed);
+    //             } else {
+    //                 setProductsError("Invalid data format received: Expected an array of product objects.");
+    //             }
+    //         } catch (err: any) {
+    //             console.error("Error fetching product data:", err);
+    //             setProductsError(err.message);
+    //         } finally {
+    //             setLoadingProducts(false);
+    //         }
+    //     };
 
-        fetchProductData();
-    }, []);
+    //     fetchProductData();
+    // }, []);
 
-    const productsToDisplay = (() => {
-        if (loadingProducts) {
-            return [{ product_id: "loading", product_name: "Loading..." }];
-        }
-        if (productsError) {
-            return [{ product_id: "error", product_name: `Error: ${productsError}` }];
-        }
-        return theProducts;
-    })();
+    // const productsToDisplay = (() => {
+    //     if (loadingProducts) {
+    //         return [{ product_id: "loading", product_name: "Loading..." }];
+    //     }
+    //     if (productsError) {
+    //         return [{ product_id: "error", product_name: `Error: ${productsError}` }];
+    //     }
+    //     return theProducts;
+    // })();
 
     return (
         <ul id="bar_as_list">
             <NavBarItemNoDropdown title="Home" link="/" />
-            <NavBarItemWithDropdown title="Technology" link="/Technology" options={productsToDisplay} />
+            {/* <NavBarItemWithDropdown title="Technology" link="/Technology" options={productsToDisplay} /> */}
+            <NavBarItemNoDropdown title="Technology" link="/Technology"/> 
             <NavBarItemNoDropdown title="About Us" link="/about" />
             <NavBarItemNoDropdown title="News" link="/news" />
             <NavBarItemNoDropdown title="Contact Us" link="/contact" />
@@ -103,25 +104,25 @@ function NavBarItemNoDropdown({ title, link }: { title: string; link: string }) 
     );
 }
 
-function NavBarItemWithDropdown({ title, link, options }: { title: string; link: string; options: Product[] }) {
-    return (
-        <li className="nav_bar_item">
-            <div className="drop_down">
-                <a className="nav_bar_item_link drop_down_link" href={link}>
-                    {title + " "}
-                    <i className="fa fa-caret-down"></i>
-                </a>
-                <div className="drop_down_wrapper">
-                    {options.map((name, index) => (
-                        <Link key={index} className="drop_down_content" to={'/' + title.toLowerCase() + '/' + name.product_id}>
-                            {name.product_name}
-                        </Link>
-                    ))}
-                </div>
-            </div>
-        </li>
-    );
-}
+// function NavBarItemWithDropdown({ title, link, options }: { title: string; link: string; options: Product[] }) {
+//     return (
+//         <li className="nav_bar_item">
+//             <div className="drop_down">
+//                 <a className="nav_bar_item_link drop_down_link" href={link}>
+//                     {title + " "}
+//                     <i className="fa fa-caret-down"></i>
+//                 </a>
+//                 <div className="drop_down_wrapper">
+//                     {options.map((name, index) => (
+//                         <Link key={index} className="drop_down_content" to={'/' + title.toLowerCase() + '/' + name.product_id}>
+//                             {name.product_name}
+//                         </Link>
+//                     ))}
+//                 </div>
+//             </div>
+//         </li>
+//     );
+// }
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState("up");
 

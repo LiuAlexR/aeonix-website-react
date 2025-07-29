@@ -75,11 +75,12 @@ function Products() {
 }
 function ProductCard({ content }: { content: ProductsItem }) {
     return (
-        <a className="card-products" href={"technology/" + content.product_id}>
+        // href={"technology/" + content.product_id}
+        <div className="card-products" > 
             <img src={content.product_img_url} className="card-products-image"></img>
             <div className="card-products-text" dangerouslySetInnerHTML={{__html: content.product_description_1}}></div>
             <div className="card-products-text" dangerouslySetInnerHTML={{__html: content.product_description_2}}></div>
-        </a>
+        </div>
     );
 
 }

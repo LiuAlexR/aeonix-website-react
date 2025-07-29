@@ -23,7 +23,7 @@
     text-align: center;
     /* width: 26rem; */
     text-decoration: none;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     /* 5px rounded corners */
 }
 
@@ -41,7 +41,7 @@
     /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 2rem 2rem;
+    /* margin: 2rem 2rem; */
 }
 .card-products-text {
     padding: 1rem 1rem;
