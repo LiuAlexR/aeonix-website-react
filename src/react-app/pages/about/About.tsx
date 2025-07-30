@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import EarthImg from "../../assets/media/about/Earth.jpeg";
 import "./About.css";
 import OurTeam from "./OurTeam";
-import PersonCards from "./PersonCards";
+// import PersonCards from "./PersonCards";
 function About() {
   return (
     <>
@@ -15,7 +15,7 @@ function About() {
         <OurTeam />
       </div>
       <div id="about_center_image_spacer"></div>
-      <PersonCards />
+      {/* <PersonCards /> */}
       <Footer />
       
     </>

@@ -64,9 +64,12 @@
 @media screen and (max-width: 50rem) {
     #background_video {
         display: none;
+        width: 105vw;
     }
     #background_image {
         display: block;
+        object-fit: none;
+        width: 105vw;
     }
     #center_text {
         position: fixed;

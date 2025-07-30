@@ -395,6 +395,24 @@
   <property name="kdenlive:expandedFolders"/>
   <property name="kdenlive:binZoom">4</property>
   <property name="kdenlive:documentnotes"/>
+  <property name="kdenlive:docproperties.rendercategory">Images sequence</property>
+  <property name="kdenlive:docproperties.rendercustomquality">-1</property>
+  <property name="kdenlive:docproperties.renderendguide">-1</property>
+  <property name="kdenlive:docproperties.renderexportaudio">0</property>
+  <property name="kdenlive:docproperties.renderfullcolorrange">0</property>
+  <property name="kdenlive:docproperties.rendermode">0</property>
+  <property name="kdenlive:docproperties.renderplay">0</property>
+  <property name="kdenlive:docproperties.renderpreview">0</property>
+  <property name="kdenlive:docproperties.renderprofile">GIF</property>
+  <property name="kdenlive:docproperties.renderrescale">1</property>
+  <property name="kdenlive:docproperties.renderrescaleheight">960</property>
+  <property name="kdenlive:docproperties.renderrescalewidth">540</property>
+  <property name="kdenlive:docproperties.renderspeed">6</property>
+  <property name="kdenlive:docproperties.renderstartguide">-1</property>
+  <property name="kdenlive:docproperties.rendertcoverlay">0</property>
+  <property name="kdenlive:docproperties.rendertctype">-1</property>
+  <property name="kdenlive:docproperties.rendertwopass">0</property>
+  <property name="kdenlive:docproperties.renderurl">mobile-video.gif</property>
   <property name="xml_retain">1</property>
   <entry producer="producer5" in="00:00:00.000" out="00:00:04.967"/>
   <entry producer="producer7" in="00:00:00.000" out="00:00:04.967"/>

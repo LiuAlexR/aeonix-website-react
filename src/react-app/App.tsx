@@ -21,7 +21,7 @@ function App() {
         <Route path="/Technology/:product_id" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<NewsPage />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin-aeonix" element={<Admin />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

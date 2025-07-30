@@ -5,7 +5,7 @@ type Bindings = {
   DB: D1Database;
 };
 const app = new Hono<{ Bindings: Bindings }>();
-
+const passwordMaster = "Qpz531{xQ]wc";
 // Accessing D1 is via the c.env.YOUR_BINDING property
 app.get("/api/products/namesDeprecated", async (c) => {
   try {
@@ -87,7 +87,7 @@ app.post("/api/contact", async (c) => {
 app.post("api/add/news", async (c) => {
   try {
     var {imageLink, redirectLink, blurb, password} = await c.req.json();
-    if(password != "1234"){
+    if(password != passwordMaster){
       return c.json({ error: "Wrong Password"}, 400);
     }
     if(!imageLink || !redirectLink || !blurb){
@@ -119,7 +119,7 @@ app.post("api/add/news", async (c) => {
 app.post("api/add/product", async (c) => {
   try {
     var {imageLink, productName, description1, description2, password, productID} = await c.req.json();
-    if(password != "1234"){
+    if(password != passwordMaster){
       return c.json({ error: "Wrong Password"}, 400);
     }
     if(!imageLink || !productName || !description1 || !description2 || !productID){
@@ -146,7 +146,7 @@ app.post("api/add/product", async (c) => {
 app.post("api/remove/news", async (c) => {
   try {
     var {blurbText, password} = await c.req.json();
-    if(password != "1234"){
+    if(password != passwordMaster){
       return c.json({ error: "Wrong Password"}, 400);
     }
     if(!blurbText){
@@ -173,7 +173,7 @@ app.post("api/remove/news", async (c) => {
 app.post("api/remove/product", async (c) => {
   try {
     var {blurbText, password} = await c.req.json();
-    if(password != "1234"){
+    if(password != passwordMaster){
       return c.json({ error: "Wrong Password"}, 400);
     }
     if(!blurbText){

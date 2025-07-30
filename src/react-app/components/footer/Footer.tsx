@@ -56,7 +56,7 @@ export default function Footer() {
                         </a>
                     </p>
                 </div>
-                <div className="footer-section footer-social">
+                {/* <div className="footer-section footer-social">
                     <h3>Follow Us</h3>
                     <div className="social-icons">
                         <a href="#" target="_blank" aria-label="Facebook">
@@ -72,11 +72,11 @@ export default function Footer() {
                             <i className="fab fa-instagram" />
                         </a>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="footer-bottom">
                 <p>© 2025 Aeonix Energy. All rights reserved.</p>
-                <div className="footer-legal-links">
+                {/* <div className="footer-legal-links">
                     <a href="/privacy-policy" className="footer-link">
                         Privacy Policy
                     </a>
@@ -84,7 +84,7 @@ export default function Footer() {
                     <a href="/terms-of-service" className="footer-link">
                         Terms of Service
                     </a>
-                </div>
+                </div> */}
             </div>
         </footer>
 

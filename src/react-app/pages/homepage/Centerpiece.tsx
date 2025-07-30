@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import logo from "../../assets/logos/aeonix.png";
 
-import DroneImage from "../../assets/media/homepage/mobile-video.gif";
+import DroneImage from "../../assets/media/homepage/the-video.gif";
 import DroneVideo from "../../assets/media/homepage/the-video.mp4";
 import "./Centerpiece.css";
 import { useEffect, useState } from "react";

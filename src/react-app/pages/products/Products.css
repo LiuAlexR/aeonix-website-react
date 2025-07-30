@@ -6,6 +6,24 @@
     height: 75vh;
     z-index: -1;
 }
+#background_image_products {
+    position: fixed;
+    left: -2vw;
+    top: -2vh;
+    min-height: 105vh;
+    min-width: 105vw;
+    z-index: -3;
+}
+#video_overlay_products {
+    position: fixed;
+    visibility: visible;
+    right: 0;
+    bottom: 0;
+    min-height: 105vh;
+    min-width: 105vw;
+    background: linear-gradient(160deg, rgba(var(--primary-light), 0) 0%, rgba(var(--primary-light), 0) 30%, rgba(var(--primary-dark), 1) 100%);
+    z-index: -2;
+}
 #about_center_image_spacer {
     left: 0;
     top: 0;
@@ -45,7 +63,6 @@
 }
 .card-products-text {
     padding: 1rem 1rem;
-    max-height: 20vh;
     overflow: hidden;
     color: rgb(var(--primary-dark));
     text-decoration: none;   
