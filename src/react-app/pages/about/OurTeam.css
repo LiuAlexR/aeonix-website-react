@@ -1,9 +1,9 @@
 .wrapper-team {
-    position: absolute;
     width: 60vw;
-    top: 15vh;
-    left: 15vw;
     padding: 2rem 5rem;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     background-color: rgb(var(--primary-light));
     max-height: 60vh;
     overflow: clip;

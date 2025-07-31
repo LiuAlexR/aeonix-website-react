@@ -14,7 +14,7 @@ function About() {
 
         <OurTeam />
       </div>
-      <div id="about_center_image_spacer"></div>
+      {/* <div id="about_center_image_spacer"></div> */}
       {/* <PersonCards /> */}
       <Footer />
       

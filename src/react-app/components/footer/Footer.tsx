@@ -1,4 +1,4 @@
-import logo from "../../assets/logos/aeonix.png";
+import logo from "../../assets/logos/aeonix_blue.png";
 import "./Footer.css";
 export default function Footer() {
     return (

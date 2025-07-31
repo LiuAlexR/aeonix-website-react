@@ -1,7 +1,7 @@
 #navbar {
     display: flex;
     flex-direction: row;
-    padding: 0 0 2rem 0;
+    padding: 0 1rem 2rem 0;
     --navbar-color: 0, 0, 0;
     background: linear-gradient(rgba(var(--navbar-color), 0.4) 0%, rgba(var(--navbar-color), 0.35) 80%, rgba(var(--navbar-color), 0) 100%);
     position: sticky;

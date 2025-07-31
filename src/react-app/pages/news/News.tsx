@@ -71,7 +71,7 @@ function NewsCard({ content }: { content: NewsItem }) {
     return (
         <a className="card-news" href={content.news_link}>
             <img src={content.news_img_url} className="card-news-image"></img>
-            <div className="card-news-text">{content.news_blurb}</div>
+            <div className="card-news-text" dangerouslySetInnerHTML={{__html: content.news_blurb}}></div>
         </a>
     );
 

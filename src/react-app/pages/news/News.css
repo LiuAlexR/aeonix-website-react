@@ -7,6 +7,7 @@
     padding-top: 2rem;
     text-align: center;
     width: 26rem;
+    margin-top: 3rem;
     text-decoration: none;
     /* 5px rounded corners */
 }
@@ -31,4 +32,12 @@
 
     color: rgb(var(--primary-dark));
     text-decoration: none;   
+}
+@media screen and (max-width: 50rem) {
+    .card-news {
+        width: 80vw;
+    }
+    .card-news-image {
+        width: 80vw;
+    }
 }
