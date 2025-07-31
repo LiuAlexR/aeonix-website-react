@@ -1,11 +1,4 @@
-#about_center_image {
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-width: 105vw;
-    height: 75vh;
-    z-index: -1;
-}
+
 #background_image_products {
     position: fixed;
     left: -2vw;
@@ -28,7 +21,7 @@
     left: 0;
     top: 0;
     min-width: 105vw;
-    height: calc(75vh - 7rem);
+    height: calc(55vh - 7rem);
     position: relative;
 }
 .card-products {
@@ -38,7 +31,8 @@
     transition: 0.3s;
     border-radius: 5px;
     padding-top: 0.5rem;
-    text-align: center;
+    text-align: left;
+    line-height: 1.5;
     /* width: 26rem; */
     text-decoration: none;
     /* margin-bottom: 2rem; */
@@ -60,10 +54,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     /* margin: 2rem 2rem; */
+    background-color: rgb(var(--very-light-gray));
+    padding-bottom: 2rem;
+
 }
 .card-products-text {
-    padding: 1rem 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 0rem;
     overflow: hidden;
     color: rgb(var(--primary-dark));
     text-decoration: none;   
+}
+@media screen and (max-width: 50rem) {
+    .card-products-text {
+        font-size: 0.8rem;
+    }
 }

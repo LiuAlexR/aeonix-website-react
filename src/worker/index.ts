@@ -5,7 +5,7 @@ type Bindings = {
   DB: D1Database;
 };
 const app = new Hono<{ Bindings: Bindings }>();
-const passwordMaster = "Qpz531{xQ]wc";
+const passwordMaster = "1234";
 // Accessing D1 is via the c.env.YOUR_BINDING property
 app.get("/api/products/namesDeprecated", async (c) => {
   try {
@@ -181,7 +181,7 @@ app.post("api/remove/product", async (c) => {
     }
 
     const stmt = c.env.DB.prepare(
-            "DELETE FROM Products WHERE product_name LIKE ?"
+            "DELETE FROM Products WHERE product_description_1 LIKE ?"
         );
 
         // Bind the blurbText with wildcards and execute the statement

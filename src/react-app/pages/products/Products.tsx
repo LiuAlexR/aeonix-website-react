@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./Products.css";
-import DroneImage from "../../assets/media/Products/battery-line.png";
+import DroneImage from "../../assets/media/Products/battery-line-cropped.png";
 interface ProductsItem {
     product_name: string; //was news date
     product_img_url: string;
@@ -64,12 +64,12 @@ function Products() {
             <Navbar />
             <img src={DroneImage} id="background_image_products"></img>
             <div id="video_overlay_products"></div>
-            <div className="video_spacer"></div>
-            <div id="center_text">
+            <div id="products_center_image_spacer"></div>
+            {/* <div id="center_text">
                 <h1>
                     Tomorrow's <br /> Technology
                 </h1>
-            </div>
+            </div> */}
             <div className="card-products-wrapper">
             {ProductsCollection.map((name, index) => (
                 <ProductCard content={name} key={index} />

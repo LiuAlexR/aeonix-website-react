@@ -37,16 +37,6 @@
 }
 
 
-.footer-section h3::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 30px;
-    height: 3px;
-    background-color: rgb(var(--primary-accent));
-    border-radius: 2px;
-}
 
 
 .footer-section ul {
@@ -109,7 +99,7 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(var(--white-to-hover), 0.2);
+    border-top: 5px solid rgba(var(--white-to-hover), 0.2);
     text-align: center;
     padding-top: 1.5rem;
     margin-top: 2rem;
@@ -154,10 +144,6 @@
         text-align: center;
     }
 
-    .footer-section h3::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     .footer-about p {
         max-width: 80%;

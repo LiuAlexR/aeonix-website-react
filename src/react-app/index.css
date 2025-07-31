@@ -13,6 +13,8 @@
   --light-gray: 225, 225, 225;
   --dark-gray: 50, 50, 70;
   --very-light-gray: 240, 240, 235;
+  --light-blue: 66, 105, 214;
+  --blue: 52, 77, 149;
 }
 body {
   margin: 0;

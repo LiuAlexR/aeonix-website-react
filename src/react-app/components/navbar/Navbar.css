@@ -3,7 +3,7 @@
     flex-direction: row;
     padding: 0 1rem 2rem 0;
     --navbar-color: 0, 0, 0;
-    background: linear-gradient(rgba(var(--navbar-color), 0.4) 0%, rgba(var(--navbar-color), 0.35) 80%, rgba(var(--navbar-color), 0) 100%);
+    background: linear-gradient(rgba(var(--navbar-color), 0.5) 0%, rgba(var(--navbar-color), 0.5) 80%, rgba(var(--navbar-color), 0) 100%);
     position: sticky;
     top: 0;
     height: 7rem;

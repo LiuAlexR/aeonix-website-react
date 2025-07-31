@@ -1,6 +1,6 @@
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
-import DroneImg from "../../assets/media/contact/Drone.jpg";
+import DroneImg from "../../assets/media/contact/drone-human-field.png";
 import "./Contact.css";
 import ContactWrapper from "./ContactWrapper";
 

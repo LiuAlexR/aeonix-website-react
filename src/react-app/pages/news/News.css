@@ -1,6 +1,6 @@
 .card-news {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgb(var(--very-light-gray));
+    background-color: rgb(var(--light-blue));
     border: 2px;
     transition: 0.3s;
     border-radius: 5px;
@@ -14,7 +14,7 @@
 
 .card-news:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background-color: rgb(var(---light-gray));
+    background-color: rgb(var(--blue));
 }
 .card-news-image {
     height: 26rem;
@@ -30,8 +30,9 @@
 .card-news-text {
     padding: 1rem 1rem;
 
-    color: rgb(var(--primary-dark));
+    color: rgb(255, 255, 255);
     text-decoration: none;   
+    
 }
 @media screen and (max-width: 50rem) {
     .card-news {

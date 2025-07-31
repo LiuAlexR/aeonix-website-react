@@ -76,7 +76,11 @@
         right: 3rem;
         bottom: 1rem;
         font-size: 0.8rem;
-        text-align: left;
+        
+        line-height: 0.8;
         z-index: -1;
+    }
+    h1 {
+        line-height: 1;
     }
 }
