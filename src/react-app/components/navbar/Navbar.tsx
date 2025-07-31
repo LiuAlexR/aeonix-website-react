@@ -16,9 +16,9 @@ export default function Navbar() {
 
 function GetLogo() {
     return (
-        <div id="logo">
+        <a id="logo" href="/">
             <img src={logo} id="logo_img" alt="Aeonix Exclusive Logo" />
-        </div>
+        </a>
     );
 }
 

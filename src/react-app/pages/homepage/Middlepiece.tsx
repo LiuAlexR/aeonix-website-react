@@ -16,7 +16,7 @@ export default function Middlepiece() {
                 <div id="card1" className="card-middle" >{/*data-aos="fade-right" data-aos-easing="ease" data-aos-duration="700" data-aos-delay="00"*/ }
                     Aeonix Energy is a high-energy battery company focused on anode-free lithium battery
                     systems for drones, eVTOLs, and unmanned ground vehicles. We were founded in
-                    2023 as a spin-out of Storagenergy Technologies, leveraging over a decade of battery
+                    2023 as a spin-out of <a href="https://storagenergy.com">Storagenergy Technologies</a>, leveraging over a decade of battery
 
                     R&D, U.S. patents, and DOE/DoD funding.<br /><br />
                 </div>
