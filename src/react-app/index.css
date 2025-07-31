@@ -15,15 +15,15 @@
   --very-light-gray: 240, 240, 235;
 }
 body {
-  font-family: 'Work Sans';
   margin: 0;
   background-color: var(--primary-light); 
 }
 html {
+  font-family: 'Futura', sans-serif;
   scroll-behavior: smooth;
   font-size: 1.2rem;
   overscroll-behavior-y: none;
 }
 h1, h2, h3 {
-  font-family:"classico-urw", "Futura ";
+  font-family: 'Futura', sans-serif;
 }

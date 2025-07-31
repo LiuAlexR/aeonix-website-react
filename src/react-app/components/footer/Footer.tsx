@@ -20,8 +20,8 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/products" className="footer-link">
-                                Products
+                            <a href="/technology" className="footer-link">
+                                Technology
                             </a>
                         </li>
                         <li>
@@ -41,7 +41,7 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className="footer-section footer-contact">
+                {/* <div className="footer-section footer-contact">
                     <h3>Get in Touch</h3>
                     <p>
                         <i className="fas fa-map-marker-alt" /> 1990 Milestone Drive, Salt Lake City, UT
@@ -55,7 +55,7 @@ export default function Footer() {
                             EMAIL
                         </a>
                     </p>
-                </div>
+                </div> */}
                 {/* <div className="footer-section footer-social">
                     <h3>Follow Us</h3>
                     <div className="social-icons">

@@ -24,7 +24,7 @@
     background: linear-gradient(160deg, rgba(var(--primary-light), 0) 0%, rgba(var(--primary-light), 0) 30%, rgba(var(--primary-dark), 1) 100%);
     z-index: -2;
 }
-#about_center_image_spacer {
+#products_center_image_spacer {
     left: 0;
     top: 0;
     min-width: 105vw;

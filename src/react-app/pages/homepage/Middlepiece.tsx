@@ -30,9 +30,9 @@ export default function Middlepiece() {
                 </div>
                 
             </div>
-            <div className="homepage-spacer">
+            {/* <div className="homepage-spacer">
 
-            </div>
+            </div> */}
             <div className="item-carousel card-middle"><h1>Proven Government &amp; Defense Alignment</h1>
         Our technology is being funded by the
         U.S. Army, Navy, Department of Energy (DOE) and drone companies, real missions, not

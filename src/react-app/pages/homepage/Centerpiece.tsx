@@ -1,17 +1,16 @@
 import { motion, AnimatePresence } from "motion/react";
 import logo from "../../assets/logos/aeonix.png";
 
-import DroneImage from "../../assets/media/homepage/the-video.gif";
+import DroneImage from "../../assets/media/homepage/mobile-video.gif";
 import DroneVideo from "../../assets/media/homepage/the-video.mp4";
 import "./Centerpiece.css";
 import { useEffect, useState } from "react";
 import useScript from "../../components/useScript/useScript";
 export default function Centerpiece() {
     const phrases = [
-        "Powering the Future<br />of Autonomous Flight", //Change to drone-fighting-fire / wind turbine (maybe generate new one) / remove landing sticks
-        "Energy Independence<br />Engineered in the U.S.",
         "Redefining Lithium Batteries",
-        "Built to Fly<br />Trusted to Perform",
+        "Powering the Future<br />of Autonomous Flight", 
+        "Energy Independence<br />Engineered in the U.S.",
         "Energy<br />That Goes Further",
     ];
 
