@@ -8,6 +8,7 @@
     min-height: 400px;
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -131,4 +132,64 @@
     top: calc(20vh + 60vh + 20px);
     left: 15vw;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 50rem) {
+    .text-form-contact-wrapper {
+        max-width: 90vw;
+
+        padding: 1.5rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        
+        position: relative;
+        min-height: auto;
+        margin-bottom: 10rem;
+    }
+
+    .contact-left-wrapper {
+        width: 70%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .contact-text {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #contact-map {
+        max-width: 70%;
+        height: 250px;
+        margin-top: 1.5rem;
+    }
+
+    #form-contact-wrapper {
+        max-width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+
+    .form-contact-label {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .form-contact-text,
+    .form-contact-textarea,
+    .form-contact-submit {
+        max-width: 100%;
+    }
+
+    .form-contact-message-success,
+    .form-contact-message-error {
+        width: 90vw;
+        left: 5vw;
+        top: auto;
+        position: relative;
+        margin-top: 2rem;
+    }
 }
