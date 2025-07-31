@@ -3,12 +3,12 @@
     width: 60vw;
     top: 20vh;
     left: 15vw;
-    padding: 3rem 6rem;
+    padding: 2rem 4rem;
     background-color: rgb(var(--primary-light));
     min-height: 400px;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;

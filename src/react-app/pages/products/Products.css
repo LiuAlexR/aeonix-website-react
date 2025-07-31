@@ -17,6 +17,15 @@
     background: linear-gradient(160deg, rgba(var(--primary-light), 0) 0%, rgba(var(--primary-light), 0) 30%, rgba(var(--primary-dark), 1) 100%);
     z-index: -2;
 }
+#product_center_text {
+    position: fixed;
+    color: rgba(var(--primary-light), 1);
+    right: 5rem;
+    bottom: 20rem;
+    font-size: 2.5rem;
+    text-align: right;
+    z-index: -1;
+}
 #products_center_image_spacer {
     left: 0;
     top: 0;
